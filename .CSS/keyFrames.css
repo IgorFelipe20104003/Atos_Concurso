@@ -1,0 +1,209 @@
+/*==================================================================== efeitos dos balões   ==================================================*/
+		/*====================efeito de entrada==================*/		
+		@keyframes teste-balao-at{
+			0%{
+				opacity: 0%;
+				height: max-content;
+				transform:translateX(-50px);
+				border-radius: 50%;
+			
+			}25%{
+				opacity: 0%;
+				border-radius: 50%;
+				transform: translateX(-40px);
+
+			}50%{
+				opacity: 50%;
+				border-radius: 60%;
+				transform: translateX(-30px);
+			}75%{
+				opacity: 75%;
+				border-radius: 80%;
+				transform: translateX(-15px);
+
+			}100%{
+				opacity: 100%;
+				transform: translateX(0px);
+				z-index: 3;
+			}
+		}
+		/*====================efeito de saida==================*/
+		@keyframes teste-balao-dt{
+			0%{	
+				opacity: 100%;
+				transform: translateX(0px);
+			}25%{
+				opacity: 75%;
+				border-radius: 80%;
+				transform: translate(-15px);
+			}50%{
+				opacity: 50%;
+				border-radius: 60%;
+				transform: translateX(-30px);
+			}75%{
+				opacity: 25%;
+				border-radius: 50%;
+				transform: translateX(-40px);
+			}100%{
+				opacity: 0%;
+				visibility: hidden;
+				border-radius: 50%;
+				transform: translateX(-50px);
+			}
+		}
+/*============================================================================================================================================*/
+/*==================================================================== efeitos do apontador ==================================================*/
+		@keyframes testeC1{
+			0%{
+				transform: translateX(245%);
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+		@keyframes testeC2{
+			0%{
+				transform: translateX(-245%);
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+		@keyframes testeE{
+
+			0%{
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(-245%);
+				opacity: 1;
+
+			}
+		}
+		@keyframes testeD{
+			0%{
+				opacity: 0.1;
+			}
+
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(245%);
+				opacity: 1;
+			}
+		}
+/*============================================================================================================================================*/
+/*====================================================================   efeitos das setas  ==================================================*/
+
+		@keyframes seta_Direita{
+			0%{
+				transform: translateX(-4px) rotate(180deg) scale(1.2);
+			}
+
+			100%{
+				transform: translateX(-8px)rotate(180deg) scale(1.2);
+			}
+		}
+		@keyframes seta_Esquerda{
+			0%{
+				transform: translateX(4px) scale(1.2);
+			}
+
+			100%{
+				transform: translateX(8px) scale(1.2);
+			}
+		}
+/*============================================================================================================================================*/
+/*====================================================================  efeitos do primeiro carrossel ========================================*/
+		@keyframes testeC1{
+			0%{
+				transform: translateX(245%);
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+		@keyframes testeC2{
+			0%{
+				transform: translateX(-245%);
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(0px);
+				opacity: 1;
+			}
+		}
+		@keyframes testeE{
+
+			0%{
+				opacity: 0.1;
+			}
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(-245%);
+				opacity: 1;
+
+			}
+		}
+		@keyframes testeD{
+			0%{
+				opacity: 0.1;
+			}
+
+			80%{
+				opacity: 0.2;
+			}
+			100%{
+				transform: translateX(245%);
+				opacity: 1;
+			}
+		}
+/*============================================================================================================================================*/
+/*====================================================================  efeitos do segundo carrossel  ========================================*/
+		@keyframes testeA2{
+			0%{transform: translateX(0%);opacity: 0.1;}
+			50%{opacity: 0.2;}
+			100%{transform: translateX(176%);opacity: 1;},
+
+		}
+
+		@keyframes testeB2{
+			0%{transform: translateX(0%);opacity: 0.1;}
+			50%{opacity: 0.4;}
+			100%{transform: translateX(-176%);}
+		}
+		@keyframes ExcecaoCentroA{
+			0%{	transform: translateX(-176%); ;opacity: 0.4;}
+			50%{transform: translateX(-88%);opacity: 0.4}				
+			100%{transform: translateX(0%);opacity: 1;}	
+		}
+		@keyframes ExcecaoCentroB{
+			0%{	transform: translateX(176%); opacity: 0.4;}
+			50%{transform: translateX(88%);opacity: 0.4}				
+				100%{transform: translateX(0%);opacity: 1;}		
+		}
+/*============================================================================================================================================*/		

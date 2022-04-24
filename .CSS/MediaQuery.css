@@ -1,0 +1,857 @@
+/*CSS Media Query falta arrumar e comentar*/
+/*===========================================    head       		  ===========================================*/
+	@media (max-width: 1800px){
+
+		.contato-inicio{
+			text-align: center;
+			justify-content: center;
+			z-index: 3;
+		}
+		.barra-rolagem-fixa{
+			max-width: 100%;
+			top: 0px;
+			height: 140px;
+			align-items: center;
+			justify-content: center;
+			z-index: 2;
+		}
+		.barra-rolagem-fixa #img-01-rolagem-fixa{
+			padding: 0px;
+			min-width: 16%;
+		}
+
+		.barra-rolagem-fixa #img-02-rolagem-fixa{
+			padding: 0px;
+			min-width: 16%;
+		}
+
+		.barra-rolagem-fixa #img-03-rolagem-fixa{
+			padding: 0px;
+			min-width: 16%;
+
+		}
+		.bandeiras{
+			position: relative;			
+			margin-left: 2px;
+			margin-right: 2px;
+			padding: 0px;
+		}
+		.bandeiras#bandeira-01{
+			padding: 0px;
+		}
+		.bandeiras#bandeira-03{
+			padding-right: 2px;
+		}
+
+		.contato-inicio ul{
+			margin: auto;
+		}
+
+		/*espaço do texto no interior da imagem*/
+		div.texto{
+			width: 70%;
+			max-height: 30px;
+			position: absolute;
+			top: 50%;
+			margin-left: 20%;	
+			color: white;
+		}
+
+	/*============================================== feito falta comentar*/
+
+		#btn-lista{
+			top: 0px;
+			position: relative;
+			display: block;
+			width: 35px;
+			height: 35px;
+			background: black;
+			border:1px solid white;
+			border-radius: 2px;
+		}
+		#burger{
+			display: block;
+			width: 30px;
+			height: 0.5px;
+			background: white;
+			top: 1px;
+			position: relative;
+			top: 0px;
+			border-top: 1px solid white ;
+			margin: auto;
+			margin-top: 3px;
+			margin-bottom: 2px;
+			transition: 0.5s;
+		}
+		#burger::before{
+			content: '';
+			position: relative;
+			bottom: 12px;
+			background: white;
+			margin: auto;
+			display: block;
+			width: 28px;
+			height: 1px;
+			background: white;
+			border:1px solid white;
+			transition: 0.5s;
+		}
+
+		#burger::after{
+			content: '';
+			position: relative;
+			top: 4px;
+			background: white;
+			margin: auto;
+			display: block;
+			width: 28px;	 		
+			background: white;
+			border:1px solid white;
+			transition: 0.5s;
+		}
+
+		#navegador {	
+			left: 0px;
+			position: absolute;
+		}
+		#navegador ul#menu li{
+			position: relative;
+			opacity: .5;
+			transition: 1s;
+
+		}
+
+		#navegador ul#menu{
+			position: absolute;
+			display: grid;
+			justify-content: center;
+			margin: auto;
+			margin-top: 28px;
+			padding-left: calc(3vw - 26%);
+			padding-bottom: 10px;
+			background: black;
+			overflow-y: auto;
+			z-index: 1;
+			visibility: hidden;
+			height: 0px;
+			width: 0px;
+			transition: 2s; 
+		}
+
+		#navegador ul#menu::-webkit-scrollbar{
+			width: 0px;
+		}
+
+		#navegador.active ul#menu li{
+			position: relative;
+			opacity: 1;
+		}
+
+
+		#navegador.active #menu{
+			display: grid;
+			visibility: visible;
+			width: 100vw;
+			height:200px;
+			text-align: center;
+		}
+
+		#navegador.active #burger::before{
+			background: red;
+			border-top:red;
+			position: absolute;
+			transform: rotate(135deg);
+			top: 11px;
+		}
+
+		#navegador.active #burger::after{
+			background: red;
+			border-top:red;
+			position: absolute;
+			transform: rotate(-135deg);
+			bottom: 6px;
+		}
+		#navegador.active #burger{
+			border-color:black;
+			background: black;
+
+		}
+
+
+		.lista-rolagem-fixa{
+			display: block;
+			border:1px solid red;
+			align-items: center;
+			justify-content: space-between;
+			text-align: center;
+
+		}
+
+		.lista-rolagem-fixa:hover{
+			background:rgba(255,255,255,.5);
+		}
+
+		.lista-rolagem-fixa:hover em .links{
+			padding-left: 40px;
+			padding-right: 40px;
+			width: 200px;
+			color: white;
+		}
+		.lista-rolagem-fixa:hover em .links:active{
+			width: 100%;
+			color: black;
+		}
+
+		.lista-rolagem-fixa#list-rolagem-fixa-01{
+			width: 200px;
+			padding-left: 0px;
+			padding-right:0px;
+
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-02{
+			width: 200px;
+			padding-left: 0px;
+			padding-right:0px;
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-03{
+			width: 200px;
+			padding-left: 0px;
+			padding-right: 0px;
+
+		}	
+		.lista-rolagem-fixa#list-rolagem-fixa-04{
+			width: 200px;
+			padding-left: 0px;
+			padding-right:0px;
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-05{
+			width: 200px;
+			padding-left: 0px;
+			padding-right:0px;
+
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-06{
+			width: 200px;
+			padding-right: 0px;
+			padding-left: 0px;
+		}	
+
+	}
+
+	@media(max-width: 1200px){
+
+		header.container-Cabecalho{
+			height:calc(100vh - 50%);
+
+		}
+		#img_f1{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@media(max-width: 700px){
+		#btn-lista{
+			top: 45px;
+			left: 40vw;
+		}
+		#navegador ul#menu{
+			margin-top: 50px;
+		}
+	}
+/*===========================================    fim do head   		  ===========================================*/	 
+/*===========================================    section 1     		  ===========================================*/
+	@media(max-width: 1200px){
+		#container-sessao #hr-right{
+			position: relative;
+			padding-bottom: 2px;
+			width: 100%;
+			max-width: 280px;
+			margin: auto;
+			float: none;
+		}
+
+	}
+
+	@media(max-width: 700px){
+		.paragrafo-sessao-01{
+			font-size: 12pt;
+
+		}
+
+	}
+/*===========================================	 fim section 1 		  ===========================================*/
+/*=========================================== 	 Section 3     		  ===========================================*/
+	@media(max-width: 1435px){
+		.div-carrossel-1{
+			display: inline-block;
+			position: relative;
+			align-self: center;
+		}	
+
+		#sublilinha-h2-parceiros{
+			width: 100%;
+		}
+		#navegador-scroll .paragrafo-carrossel{
+			display: inline-grid;
+			width: 100%;
+			max-width: 100%;
+			height: 20%;
+			max-height: 9%;
+			overflow-x: hidden;
+			overflow-y: scroll;				
+			text-align: center;
+			justify-content: left;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar{
+			width: 5px;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-track{
+			width: 1px;
+			opacity: 0;
+			color: rgb(54,54,54);
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-thumb{
+			background: rgba(54,54,54,.5);
+		}
+
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-track:hover{
+			opacity: 1;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-thumb:hover{
+			background: rgba(124,124,124,1);
+		}
+
+
+		.svg-carrossel{
+			top: -24%;
+			right: -20%;
+			height: 10px;
+			padding: 5px;
+		}	
+
+		.qt-esquerda{
+			float: left;
+			bottom: 100px;
+			height: 10%;
+		}
+		.qt-direita{
+			float: right;
+		}
+		.iframe-carrossel{
+			justify-content: center;
+			left: 0%;
+			min-width: 100%;
+
+		}
+
+	}
+
+	@media(max-width: 620px){
+
+		.div-carrossel-1 .h2-carrossel{
+			font-size: 15pt;
+		}
+
+		#navegador-scroll .paragrafo-carrossel{
+			display: inline-block;
+			width: 100%;
+			max-width: 100%;
+			font-size: 12px;
+			justify-content:left;
+			overflow-y: scroll;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar{
+			width: 5px;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-track{
+			width: 1px;
+			opacity: 0;
+			color: rgb(54,54,54);
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-thumb{
+			background: rgba(54,54,54,.5);
+		}
+
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-track:hover{
+			opacity: 1;
+		}
+		#navegador-scroll .paragrafo-carrossel::-webkit-scrollbar-thumb:hover{
+			background: rgba(124,124,124,1);
+		}
+
+		.qt-esquerda{
+			float: left;
+			bottom: 100px;
+			height: 3%;
+			padding: 0px;
+		}
+		.qt-direita{
+			float: right;
+			height: 3%;
+			left: 80%;
+		}
+
+		.svg-carrossel{
+			top: -18%;
+			right: -30%;
+			height: 10px;
+			padding: 5px;
+		}	
+	}	
+
+		/*=============================================== parceiros =============================================*/
+		.parceiros{
+			margin-bottom: 20px;
+		}
+	@media(max-width: 700px){
+		.img-parceiros-final{
+			 max-width: 300px;
+   			 min-width: 280px;
+		}
+		.parceiros{
+
+			height: 300px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			margin-bottom: 20px;
+		}
+
+		.parceiros::-webkit-scrollbar{
+			width: 4px;
+		}
+		.parceiros::-webkit-scrollbar-thumb{
+			background: rgba(54,54,54,.8);
+			width: 10px;
+		}
+		.parceiros::-webkit-scrollbar-track{
+			background: rgba(54,54,54,.3);
+			border-radius: 50%;
+		}
+
+		.parceiros::-webkit-scrollbar-thumb:hover{
+			background: rgba(54,54,54,1);
+			width: 10px;
+		}
+		.parceiros::-webkit-scrollbar-track:hover{
+			background: rgba(54,54,54,.5);
+		}
+
+		/*=======================================================================================================*/
+
+	}
+/*=========================================== 	 Fim da section 3 	  ===========================================*/
+/*===========================================    Section4 	          ===========================================*/
+
+	@media(max-width: 1250px){
+		#carrossel-2{
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			width:100%;
+			max-width: 1200px;
+			min-width: 280px;
+			height: 697px;
+			max-height: auto;
+			overflow-x: auto;
+			gap: 50%;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.div1-carrossel-2{
+			background: blue;
+			width: 100%;
+			max-width: 790px;
+			min-width: auto;
+			height: 663px;  
+			min-height: auto;
+			position: relative;
+			display: grid;
+			justify-content: left;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			margin: auto;
+			background: white;
+			border-radius: 15px;
+			grid-column-gap: 19px;
+			overflow-y: scroll; 
+		}
+		#seta-direita, #seta-esquerda{
+			height: 40px;
+		}
+		.div1-carrossel-2::-webkit-scrollbar{
+			width: 0px;
+		}
+
+		#hr-sessao-4{
+			width:90%;
+			max-width: 600px;
+			min-width: 280px;
+		}
+
+
+	/*testes com animações*/
+	/*************Condições do activeD******************/
+		
+
+		#ativador-carrossel-2.activeD2 .div1-carrossel-2{		
+
+			animation-name: testeA2;
+			animation-duration: .6s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;		
+			z-index: 1;
+		}
+
+
+	/***************************************************/	
+	/*************Condições do activeE******************/
+
+
+		#ativador-carrossel-2.activeE2 .div1-carrossel-2{		
+			animation-name: testeB2;
+			animation-duration: .6s; 
+			animation-timing-function: ease;
+			z-index: 1;
+			animation-fill-mode: forwards;
+		}
+
+	/***************************************************/
+	/*************Condições do Centro******************/	
+
+		#ativador-carrossel-2.activeE2.centroE2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroA;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: .6s;
+			z-index: 1;
+		}
+
+		#ativador-carrossel-2.activeD2.centroD2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroB;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: .6s;
+			z-index: 1;
+		}
+
+		.div-interna-carrossel-2 .container-texto-interno{
+			position: absolute;		
+			width: 80%;	 
+			max-width: max-content;
+			min-width: 130px;
+			height: 50%;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			color:white;
+			padding-left: 10px;
+			padding-right: 10px;
+			top: 50%;
+		}
+
+		.container-texto2-interno{
+			width: 100%;
+			max-width: max-content;
+			height: 170px;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			text-align: justify;
+		}
+	/*=========================definindo modelo da barra de scroll do texto interno==================*/
+		.container-texto-interno::-webkit-scrollbar{width: 5px;}
+		.container-texto-interno::-webkit-scrollbar-track{
+			background: rgba(54,54,54,0);
+			border-radius: 20px;
+			transition: 1s;
+		}
+		.container-texto-interno::-webkit-scrollbar-thumb{
+			background: rgba(124,124,124,0.3);
+			border-radius: 25px;
+		}
+
+		.container-texto2-interno::-webkit-scrollbar{width: 5px;}
+		.container-texto2-interno::-webkit-scrollbar-track{
+			background: rgba(54,54,54,0);
+			border-radius: 20px;
+			transition: 1s;
+		}
+		.container-texto2-interno::-webkit-scrollbar-thumb{
+			background: rgba(124,124,124,0.3);
+			border-radius: 25px;
+		}
+
+
+	/*=========================modificações do scroll ao passar o mouse=========*/		
+		.container-texto-interno::-webkit-scrollbar-track:hover{
+			background: rgba(54,54,54,0.2);
+		}
+		.container-texto-interno::-webkit-scrollbar-thumb:hover{
+			outline-width: 1px;
+			outline-color: red;
+			background: rgba(124,124,124,1);
+		}
+
+		.container-texto2-interno::-webkit-scrollbar-track:hover{
+			background: rgba(54,54,54,0.2);
+		}
+		.container-texto2-interno::-webkit-scrollbar-thumb:hover{
+			outline-width: 1px;
+			outline-color: red;
+			background: rgba(124,124,124,1);
+		}
+	/*===========================fim das modificações======================*/
+
+
+		#centro{
+			background: rgb(128,128,128);
+		}
+
+		#direita{
+			background: rgb(54,54,54);
+		}
+
+		@keyframes testeA2{
+			0%{;opacity: 0.1;}
+			50%{opacity: 0.2;}
+			100%{opacity: 1;},
+		}
+		@keyframes testeB2{
+			0%{transform: translateY(0%);opacity: 0.1;}
+			50%{opacity: 0.4;}
+			100%{transform: translateY(-298%);}
+		}
+		@keyframes ExcecaoCentroA{
+			0%{	transform: translateY(-280%); opacity: 0.1;}
+			50%{opacity: 0.1}				
+			100%{transform: translateY(-149%);opacity: 1;}		
+		}
+		@keyframes ExcecaoCentroB{
+			0%{	transform: translateY(0%); ;opacity: 0.1;}
+			50%{transform: translateY(-88%);opacity: 0.1}				
+			100%{transform: translateY(-149%);opacity: 1;}	
+		}
+	}
+	@media(max-width: 800px){
+		.div-interna-carrossel-2{
+			background: white;		
+			width: 100%;	
+			max-width: 360px;
+			height: 300px;
+		}
+
+		.div-interna-carrossel-2 .container-texto-interno{
+			position: absolute;			 
+			max-width: max-content;
+			min-width: auto;
+			color:white;
+			padding-left: 54px;
+			padding-right: 54px;
+			height: 160px;
+			top: 40%;
+		}
+
+
+		.div1-carrossel-2:nth-child(n + 1){	
+			background: blue;
+			width: 100%;
+			max-width: 790px;
+			min-width: auto;
+			height: 663px;  
+			min-height: auto;
+			position: relative;
+			display: grid;
+			justify-content: center;
+			grid-template: 150px;
+			grid-template-columns:calc(642px / 2) calc(360px / 10vh);
+			grid-template-rows: 1fr 1fr 1fr;
+			margin: auto;
+			background: white;
+			border-radius: 15px;
+			grid-column-gap: 10px;
+			grid-row-gap: 10px;
+
+		}/*as cores sao simplismente para mostrar que se tratam de divs diferentes*/
+		.div1-carrossel-2 .div-interna-carrossel-2:nth-child(1){
+			background: green;
+			position: relative;
+			grid-row: 1;
+			grid-column: 1/3;
+			width: 100%;
+			max-width: 100%;
+			min-width: auto;
+			max-height:663px; 
+			min-height: auto;
+		}	
+
+		.img1-carrossel-2{
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+		.h3-carross el-2{
+			width: 80%;
+		}
+
+	}
+/*===========================================	 Fim da section 4     ===========================================*/	
+/*===========================================    Section final        ===========================================*/
+	@media(max-width:1812px){
+		#h2-sessao-final{
+			text-align: center;
+			margin: auto;
+			padding-left: 0px;
+			width: 100%;
+			max-width: 450px;
+			font-size: 40pt;
+		}
+		#hr-sessao-final{
+			margin: auto;
+			width: 100%;
+			max-width: 600px;
+
+		}
+		.container-sessao-final{
+			justify-content: center;
+		}
+
+		.container-fale-conosco{
+			text-align: center;
+		}
+
+	}
+
+
+/*===========================================    Fim da section final ===========================================*/
+/*===========================================    Main 				  ===========================================*/
+		@media(max-width: 1200px){
+			#hr-principal{
+			align-items: center;
+			width: 90%;
+			max-width: 500px;
+			min-width: 280px;
+			}
+
+		@media(max-width: 700px){	
+			.div-principal{
+				gap:10px;
+			}
+	   
+			.div-interna {
+			    max-width: 95px;
+			    max-height: 118px;
+			    word-wrap: break-word;
+			}
+
+			.btn-ver-mais{
+				left: 9%;
+			}
+
+
+			/*============================= ativando de balões ========================*/
+
+			.div-interna.ativado #texto-1, .div-interna.ativado #texto-2, .div-interna.ativado #texto-3, .div-interna.ativado #texto-4, .div-interna.ativado #texto-5, .div-interna.ativado #texto-6,.div-interna.ativado #texto-7, .div-interna.ativado #texto-8{ max-width:100px; min-height: 200px;}
+
+			/*============================== desativando balões ========================*/
+			.div-interna.desativado #texto-1, .div-interna.desativado #texto-2, .div-interna.desativado #texto-3, .div-interna.desativado #texto-4, .div-interna.desativado #texto-5, .div-interna.desativado #texto-6,.div-interna.desativado #texto-7, .div-interna.desativado #texto-8{ max-width:100px; overflow-x: hidden; }
+		}
+/*===========================================    Fim do Main 		  ===========================================*/		
+/*===========================================    Footer 			  ===========================================*/
+	@media(max-width:800px ){
+		.container-rodape{
+			display: inline-grid;
+			align-items: flex-start;
+			grid-template-columns: 1fr;
+			grid-row-gap: 5px;
+		}
+		.texto-footer{
+			text-align-last: center;
+		}
+		.img-footer{
+			margin: auto;
+		}
+		#img1-footer{
+			margin-left: 0px;
+			martgin:auto;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+	}
+
+/*===========================================    textos e títulos a 1200px ======================================*/
+
+	@media(max-width: 1200px){
+
+		/*========= header ====*/
+		div.texto p#p-header{
+			font-size:30pt;
+		}
+		/*=====================*/
+		/*section 1*/
+		#container-sessao #h2-sessao-01{
+			font-size: 25pt;
+			text-align: center;
+		}
+		/*=====================*/	
+		/*======== section 3 ==*/
+		.div-carrossel-1 .h2-carrossel{
+			height: 10%;
+			position: relative;
+			bottom: 74px;
+			text-align: center;
+		}
+
+		#h2-parceiros {
+			font-size: 25pt;
+		}
+		/*=====================*/	
+		/*======== section 4 ==*/
+		#h2-sessao-4{
+			padding-top: 121px;
+			text-align: center;
+			font-family: "Bold";
+			font-size: 25pt;
+
+		}
+		/*====================*/
+		/*====section final ==*/
+		.container-sessao-final{
+			justify-content: center;
+		}
+		#h2-sessao-final{
+			justify-content: center;
+			margin: auto;
+			padding-left: 0px;
+			padding-top: 0px;
+			font-size: 25pt;
+		}
+
+		#hr-sessao-final{
+			margin: auto;
+			width: 100%;
+			max-width: 280px;
+		}
+
+		.container-fale-conosco{
+			text-align: center;
+			align-items: center;
+		}
+
+
+		/*===================*/
+		/*====== main =======*/
+		#h2-center{
+			font-size: 25pt;
+		}
+	}
+/*===============================================================================================================*/	
+/*===========================================    texto interno formula 1 700px ==================================*/
+
+	@media(max-width: 700px){
+		div.texto p#p-header{
+			font-size:15pt;
+	}	
+/*================================================================================================================*/

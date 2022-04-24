@@ -1,0 +1,1548 @@
+/*===============================================  padrao =================================================================*/
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+/***************************************************************************************************************************/	
+
+/*===============================================  header ===================================================================*/
+/*=====================================algumas configurações gerais====================*/
+		@font-face{
+			font-family: 'Bold';
+			src: url("../fontes/Montserrat-Bold.otf");
+		}
+		@font-face{
+			font-family: 'Medium';
+			src: url("../fontes/Montserrat-Medium.otf");
+		}
+		@font-face{
+			font-family: 'Regular';
+			src: url("../fontes/Montserrat-Regular.otf");
+		}
+		#scroll-fixed-top.active .barra-rolagem-fixa{
+			animation-name: top;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+
+		#scroll-fixed-top.desactive .barra-rolagem-fixa{
+			animation-name: top;
+			animation-direction: reverse;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+
+
+		@keyframes top{
+			100%{
+				transform: translateY(-32px);
+			}
+		}
+/*=====================================================================================*/
+/*===================================== cabeçalho =====================================*/
+		.container-Cabecalho{
+			background: #5e5e5e;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			height: 996px;
+			margin: auto;			
+		}
+	/*===========================estilo gerais das lista=============================*/
+		.contato-inicio{
+			background: #5e5e5e;
+			position: relative;
+			height: 25px;
+			max-width: 1920px;
+			min-width: 280px;
+			justify-content: space-between;
+			z-index: 4;
+		}
+		.contato-inicio ul{
+			position: relative;
+			list-style: none;
+			color: white;
+			margin-right:338px;
+			text-align: right;
+			height: 25px;
+			font-family: "Bold";
+			font-size: 10pt;
+		}
+		.contato-inicio ul li{
+			display: inline-flex;
+			padding-left: 18px;
+			margin: 0px;
+			height: 25px;
+			align-items: center;
+			justify-content: center;
+		}
+		span #tel-1, span #tel-2{
+			height: 25px;	
+			padding-right: 2px	
+		}
+	/*=======================estilo individuais das lista============================*/
+		li#mail-01{
+			width:100%; 
+			height: 25px;
+			min-width: 175px;
+			max-width: min-content;
+			cursor: pointer;
+		}
+		li#tel-01{
+			width:100%; 
+			min-width: 175px;
+			max-width: max-content;
+			height: 25px;	
+		}
+		#mail-01:hover{
+			 background: rgba(105,89,205,0.4);
+			 height: 25px;	
+		}
+
+		#tel-01:hover {
+			 background: rgba(105,89,205,0.4);
+			 height: 25px;
+		}
+	/*=============span de lista adicionando simbolo telefone========================*/
+		#tel-1::before, #tel-2::before {
+			content:'✆' 
+
+		}
+	/*===============================================================================*/
+	/*===================== svg instagram e linkedin ================================*/
+		.instagram{
+			width: 13.6px;
+			transform: translateY(3px);
+		}
+		.linkedin{
+			transform: scale(1.5) translate(4px , -1px);
+			height: 13px;
+		}
+	/*===============================================================================*/	
+	/*=========================Fim estilos listas hader==============================*/
+	/*=========================barra de rolagem fixa=================================*/
+
+		.barra-rolagem-fixa{
+			position: fixed;
+			display: inline-flex;
+			box-sizing: border-box;
+			background: black;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			height: 71px;
+			align-items: center;
+			align-self: center;
+			z-index: 2;
+		}
+	/*===============================================================================*/	
+	/*=============estilos das imagens da barra de rlagem fixa=======================*/
+		.barra-rolagem-fixa #img-01-rolagem-fixa{
+			width: 174px;
+			height:37px;
+			padding-top:14px; 
+			padding-bottom: 14px;
+			padding-left: 345px; 
+		}
+
+		.barra-rolagem-fixa #img-02-rolagem-fixa{
+			width: 53px;
+			height: 37px;
+			padding-left: 24px; 
+			padding-bottom: 14px;
+			padding-top:14px;
+		}
+
+		.barra-rolagem-fixa #img-03-rolagem-fixa{
+			width: 154px;
+			height: 37px;
+			padding-left:23px;
+			padding-top:14px;
+			padding-bottom: 14px;
+			padding-right: 187px;			
+		}
+	/*===============================================================================*/	
+
+	/*****************lista da barra de rolagem fixa**********************************/
+
+		#navegador{
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			margin-left: 0px;
+		}
+		#navegador ul#menu{
+			display: inline-flex;
+			margin: 0px;
+			padding-top: 14px;
+			padding-bottom: 14px;
+			align-items: center;
+			text-align: center;
+			font-family: "Bold";
+
+			 }
+
+		.lista-rolagem-fixa{
+			display: inline;
+			position: relative;
+			align-items: center;
+			padding-right: 17px;
+
+
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-01{
+		 width: 126px;
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-02{
+		width: 98px;
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-03{
+		width: 107px;
+		}	
+		.lista-rolagem-fixa#list-rolagem-fixa-04{
+		width: 86px;
+	
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-05{
+		width: 50px;
+	
+		}
+		.lista-rolagem-fixa#list-rolagem-fixa-06{
+		width: 88px;
+	
+		}		
+		.lista-rolagem-fixa .links{
+			position: relative;
+			text-decoration: none;
+			color:white;
+			transition: 0.5s;
+		}
+
+		.lista-rolagem-fixa:hover{
+			color: red;
+			background-color: rgba(255,255,255,.5);
+			outline-style: solid;
+			outline-width: 2px;
+			overflow-y: auto;
+			transform: scaleY(2);
+			z-index: 1;
+			border-radius: 2px;
+		}
+		.lista-rolagem-fixa:hover em .links{
+			color: white;
+		}
+		.lista-rolagem-fixa:hover em .links:active{
+			color: black;
+		}
+
+		.links:active{
+			color: black;
+		}
+	/*********************************************************************************/	
+	/*==============espaçamentos das bandeiras======*/
+
+		.bandeiras{
+			padding-right: 1px
+		}
+		.bandeiras#bandeira-01{
+			padding-left: 109px
+		}
+		.bandeiras#bandeira-03{
+			padding-right: 78px;
+		}
+    /*=========fim de espaçamento das bandeiras======*/
+    /*====imagem com texto para finalizar o header===*/
+
+		div.imagem{
+			padding-top: 71px;
+			position: relative;
+			width: 100%;
+		}
+		#img_f1{
+			width: 100%;
+			height: 900px;
+		}
+		div.texto{
+			width: 70%;
+			max-height: 30px;
+			position: absolute;
+			top: 33%;
+			margin-left: 20%;	
+			color: white;
+		}
+		div.texto #p-header{
+			margin-top:0px; 
+			margin-bottom: 0px;
+			font-family: "Bold";
+			font-size: 50pt;
+		}
+
+		hr#sublilinha-p-header{
+			margin:auto;
+			background-color: white;
+			height: 1px;
+			border-color:white;
+			margin-top:0px; 
+		}
+		/*========== fim imagem com texto =========*/
+		/*botão para mobile ou quebra de view port a 1800px*/
+		#btn-lista{
+			display: none;
+		}
+	/*===============================================*/	
+/*===================================================================================*/	
+/*****************************************************************************************************************************/
+
+/*======================================================  sessao - 1 A Atos Capital ==========================================*/
+		@font-face{
+			font-family: 'Bold';
+			src: url("../fontes/Montserrat-Bold.otf");
+		}
+		@font-face{
+			font-family: 'Medium';
+			src: url("../fontes/Montserrat-Medium.otf");
+		}
+
+
+		.sessao-01{
+			position: relative;
+			margin: auto;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			background: url("../.imagens/Lotes/Grupo de máscara 881.jpg");
+			background-size: 100%;
+			min-height: 454px;
+			max-height: auto;
+		}
+    /*===============definindo o tamanho do div que contem as informações===========*/
+		#container-sessao{
+			width: 95%;
+			max-width: 1920px;
+			min-width: 280px;
+			height: min-content;
+
+
+		}
+    /*======Definindo propriedades e alinhando itens a esquerda do view port========*/
+
+		#container-sessao #h2-sessao-01{
+			padding-top: 25px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-family: "Bold";
+			font-size: 50pt; /* verificar com o professor essa questão dos pontos*/
+			text-align: right;
+		}
+		#container-sessao #hr-right{
+			position: relative;
+			padding-bottom: 2px;
+			margin-top: 2px;
+			margin-right: 1px;
+			border-color: #820917;
+			background:#820917;
+			width: 520px;
+			float: right;
+		}
+
+		.paragrafo-sessao-01{
+			font-family: "Medium";
+			font-size: 20pt;
+			padding-bottom: 40px;
+			text-align: right;
+			margin-left: 15%;
+			padding-right: 0px;
+			margin-bottom: 0px;
+			word-wrap: break-word;
+		}
+
+		#sessao-01-p{
+			margin-top: 40px; 
+			word-wrap: break-word;
+		}
+/*****************************************************************************************************************************/
+
+/*====================================================== sessao - 2 =========================================================*/
+	.sessao-02{
+			position: relative;
+			margin: auto;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			max-height: 760px;
+		}
+	#container-img #img-sessao-02{
+	   	display: flex;
+	   	width: 100%;
+	   	max-height: 730px ;
+	   }
+
+ 	 #container-img #hr-img-sessao-02{
+	   	margin: 0px;
+	    height: 30px;
+	    min-height: 15px;
+	   	background-color: #820917;
+	   	border: none;
+	   }
+/*****************************************************************************************************************************/
+
+/*====================================================== main      ===========================================================*/
+		/*pre definições da MAIN*/
+		.sessao-principal{
+			width: 100%;
+			max-width: 1920px;
+			min-width:280px;
+			min-height: 812px;/*quando for alterar no media query colocar max-height:auto para adaptar a quebra de view port*/
+			margin: auto;
+			position: relative;
+			background: url("../.imagens/Lotes/Grupo de máscara 878.jpg");
+		}
+		.principal{
+			min-height: auto;
+		}
+
+
+		#h2-center{
+		font-family: "Bold";
+		padding-top: 135px; 
+		text-align: center;
+		font-size: 50pt;
+		}
+
+		#hr-principal{
+			align-items: center;
+			margin:auto;
+			width: 100%;
+			max-width: 620px;
+			min-width: 280px;
+			padding-bottom: 2px;
+			margin-top: 2px;
+			border-color:#820917;
+			background-color: #820917;
+		}
+	   
+		.div-principal{
+			display: flex;
+			position: relative;
+			margin: auto;
+			margin-top: 50px;
+			padding-top: 30px;
+			padding-bottom: 70px;
+			width: 100%;
+			max-width: 1450px;
+			min-height: max-content;
+			justify-content: center;
+			align-items: center;
+			/*min-height: auto;*/
+			gap: 19px;
+			flex-wrap: wrap;
+			z-index: 1;
+		/*	border:1px solid black;   para ver a borda e facilitar edições*/
+		}
+		.img-div-interna{
+			width: 100%;
+			height: 70%;
+		}
+		.btn-ver-mais{
+			position: relative;
+			margin: auto;
+			left: 40%;
+			background-color: red;
+			font-size: 8pt;
+			color: white;
+			border-radius: 4px;
+			width: 78px;
+			height: 26px;
+			border:none;
+			cursor: pointer;
+			font-family: "Bold";
+			font-size: 8pt;
+		}
+		.btn-ver-mais:active{
+			color: red;
+			background-color: white;
+		}
+
+		.div-interna{
+			flex: 265px;
+			max-width: 265px;
+			height: 239px;
+			max-height: 239px;
+			background: white;
+			box-shadow: 8px 9px 24px -12px black;
+			transition: 0.1s;
+			padding-bottom: 30px;
+						
+		}
+
+		.div-interna:hover{
+			transform: scaleY(1.2);
+			border-radius: 20%;
+			outline-style: solid;
+			outline-color: red;
+			background: black;
+			gap:19px; 
+			z-index: 2;
+		}
+		/*=============escondendo textos dos balões====================================*/
+		#texto-1, #texto-2, #texto-3, #texto-4, #texto-5, #texto-6, #texto-7, #texto-8{
+			font-family: "Regular";
+			font-size: 11pt;
+			display: none;
+		}
+
+		/*==========================================================ativando balões=================================================================*/
+		.div-interna.ativado{
+			z-index: 2;
+		}
+
+		.div-interna.ativado #texto-1{
+			position:relative;display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-color: black;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-2{
+			display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-3{
+			display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-4{display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-5{display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-6{display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-7{display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;z-index: 2;
+		}
+		.div-interna.ativado #texto-8{display:block;width: 265px; height: max-content; animation-name: teste-balao-at; animation-duration: 0.5s;
+  		  animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100; border-radius: 0% 0% 5% 5%;outline-style: double;outline-color: black;outline-width: 2px;
+		z-index: 2;}
+
+		/*=================================================================desativando baloes======================================================*/
+
+
+		.div-interna.desativado #texto-1{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}
+		.div-interna.desativado #texto-2{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}
+		.div-interna.desativado #texto-3{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}	
+		.div-interna.desativado #texto-4{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration:0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}	
+		.div-interna.desativado #texto-5{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}	
+		.div-interna.desativado #texto-6{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}	
+		.div-interna.desativado #texto-7{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}
+		.div-interna.desativado #texto-8{ display: block; width: 265px; height: max-content; animation-name: teste-balao-dt;
+		  animation-duration: 0.5s; animation-fill-mode: forwards; margin-top: -1px; color: #ebcf82; text-align: center; background-color: #ff1100;
+		}		
+		/*===========================================================================================================================================*/
+/******************************************************************************************************************************/
+
+/*====================================================== Section 3 ==========================================================*/
+		.sessao-03{
+			background: rgb(220,220,220);
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			min-height: 1661px;
+			margin: auto;
+			position: relative;
+		}
+
+		.container-sessao-3{
+			position: relative;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			min-height: 1661px;
+			margin: auto;
+			position: relative;
+		}
+
+
+		/*===========================================estilos das setas=====================================================*/
+
+		.seta{
+			position: absolute;
+		}
+		#seta-direita{
+			top: 320px;
+			left: 8%;
+			transform: rotate(180deg);
+		}
+		#seta-direita:hover{
+			animation-name: seta_Direita;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in;
+		}
+
+		#seta-esquerda{
+			top: 320px;
+			right: 5%;
+		}
+		#seta-esquerda:hover{
+			animation-name: seta_Esquerda;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in
+		}
+
+		/*===========================================================================================*/
+		/*=================================== ativando e estilizando o 1° carrossel =================*/		
+
+		#navegador-scroll{
+			position: relative;
+			display: flex;
+			margin: auto;
+			padding-bottom:135px;
+			padding-top: 150px;
+			max-width: 75%;
+			overflow-x: auto;
+			gap: 9%;
+			justify-content: center;
+			align-items: center;
+
+		}
+		#navegador-scroll::-webkit-scrollbar{
+			width: 0px;
+		}
+		.div-carrossel-1{
+			width: 100%;
+			max-width:523px;
+			height: 380px;  
+			min-height: auto;
+			position: relative;
+			display: inline-flex;
+			margin: auto;
+			min-width: 40%;
+			background: white;
+			border-radius: 15px;
+			flex-wrap: wrap;
+			grid-gap:0px;
+			z-index: 0;
+			/*	border:1px solid black; caso queira modificar usar para definir os parametros*/
+
+		}
+		.div-carrossel-1 .h2-carrossel{
+			position: relative;
+			height: 20%;
+			font-family: "Bold";
+			font-size: 20pt;/*ver se a media esta correta*/
+			padding: 0px;
+			padding-bottom: 2px;
+			padding-top: 45px;
+			text-align: left;
+
+		}
+		#navegador-scroll .paragrafo-carrossel{
+			display: inline-flex;
+			justify-content: center;
+			margin: 0px;
+			font-family: "Medium";
+			text-align: center;
+			align-items: center;
+			margin: auto;
+			width: 50%;
+			min-width: max-content;
+			min-width: 29%;
+			word-wrap: break-word;
+			height: 50%;
+		}
+		.iframe-carrossel{		
+			position: relative;	
+			display: inline-block;
+			top: -8%;
+			left: -10px;
+			width: 100%;
+			max-width: 233px; 
+			min-width: auto;
+			height: 100%;
+			max-height: 191px;
+			min-width: auto;
+			min-height: 20%;
+			background: rgba(135,0,0,1);
+			border-radius: 15px;
+		}
+
+		/* =========== carrossel 1 ==============*/
+
+		#navegador-scroll.centro.activeE .div-carrossel-1{
+			animation-name : testeC1;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;	
+			animation-timing-function: ease-out;			
+		}
+
+		#navegador-scroll.centro.activeD .div-carrossel-1{
+			animation-name : testeC2;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+		}
+		#navegador-scroll.activeE  .div-carrossel-1{
+			animation-name: testeE;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-out;
+			
+		}
+		#navegador-scroll.activeD  .div-carrossel-1{
+			animation-name: testeD;
+			animation-duration: 1.5s;	
+			animation-fill-mode: forwards;	
+			animation-timing-function: ease-out;
+		}
+		/* =========== fim carrossel 1 ==============*/
+		/* apontador do carrossel(indica em qual parte o mesmo esta)*/
+
+		#apontador{
+			width: 8px;
+			height: 10px;
+			background: rgb(54,54,54);
+			margin: auto;
+			border-radius: 50%;		
+			transition:1.4s;
+		}
+		#apontador::before{
+			content: "";
+			position: absolute;
+			display: inline-flex;
+			width: 8px;
+			height: 10px;
+			background: rgb(128,128,128);
+			margin-left: -10px;
+			border-radius: 50%;
+
+			transition:1.4s;	
+		}
+
+		#apontador::after{
+			content: "";
+			display: inline-flex;
+			position: absolute;
+			width: 8px;
+			height: 10px;
+			margin-left: 10px;
+			background: rgb(128,128,128);
+			border-radius: 50%;
+			transition:1.4s;
+		}
+
+
+		#apontador.centro.activeD#apontador{ background: rgb(54,54,54);}
+		#apontador.centro.activeE#apontador{ background: rgb(54,54,54);}
+
+
+		#apontador.centro.activeD#apontador::before{background: rgb(128,128,128);}
+		#apontador.centro.activeE#apontador::after{background: rgb(128,128,128);}
+
+		#apontador.activeD#apontador::before{ background: rgba(54,54,54);}
+		#apontador.activeD#apontador{background:rgb(128,128,128);}
+
+		#apontador.activeE#apontador::after{ background: rgba(54,54,54);}
+		#apontador.activeE#apontador{background:rgb(128,128,128);}
+
+		/*fim dos apontadores do carrossel 1*/
+
+		.qt-direita{
+			position: absolute;
+			display: inline-flex;
+			top: 90%;
+			left: 90%;
+			width: 25px;
+			height: 25px;
+			padding-right: 25px;
+		}
+		.qt-esquerda{
+			position: absolute;
+			display: inline-flex;
+			padding-left: 12px;
+			height: 20px;
+			bottom: 35%;
+			width: 25px;
+			height: 25px;
+			align-items: right;
+			left: 0%;
+
+		}		
+		.svg-carrossel{
+			position: relative;
+			top: 75px;
+			right: 130px;
+			height: 10px;
+			padding: 5px;
+		}
+
+		/*============================== segunda parte do section 3 (Parceiros) ===========*/
+		#parceiros-container{
+			position: relative;
+			display: inline-flex;
+			width: 65%;
+			margin:auto;
+			height: auto;
+			margin-top: 75px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			column-gap: 20px;
+		}
+		#h2-parceiros {
+			font-family: "Bold";
+			margin-top: 123px;
+			text-align: center;
+			font-size: 50pt;
+		}
+		#sublilinha-h2-parceiros{
+			padding: 2px;
+			background: #820917; 
+			width: 100%;
+			max-width: 50%;
+			min-width: 200px;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+		.parceiros{
+			display: flex;
+			position: relative;
+			flex-flow:column;
+			width: 100%;
+			max-width: 504px;
+			min-height:150px; 
+			margin: auto;
+			background: white;
+			border-radius: 5%;
+			height: min-content;
+		}
+		.img-parceiros{
+			width: 100%;
+			min-height: 75px;
+			border-radius: 5%;
+		}
+
+		.h3-sap-parceiros{
+			padding-left: 40px;
+			position: relative;
+			display: inline-flex;
+			font-family: "Bold";
+			font-size: 17pt;
+		}
+
+		.paragrafo-parceiros{
+			align-items: justify;
+			padding-left: 40px;
+			padding-right: 40px;
+			opacity: 0.5;
+			text-indent: 20px;
+			font-family: "Medium";
+			font-size: 13pt;
+		}
+		.paragrafo-parceiros#id-paragrafo-parceiros-B1{
+			padding-bottom: 40px;
+		}
+
+		.final-parceiros{
+			margin: auto;	
+			margin-top: 60px;
+			max-width: 90%;
+			height: max-content;	
+			justify-content: center;
+			display: flex;
+			flex-wrap: wrap;
+			padding-bottom: 50px;
+			gap: 15px;
+		}
+		.img-parceiros-final{
+			position: relative;	
+			flex:1 1 250px;
+			max-width: 300px;
+			grid-row-gap: 60px;
+			display: flex;
+			height: 60px;
+			flex-wrap: wrap;
+			margin-bottom: 60px; 
+		}	
+/*****************************************************************************************************************************/
+
+/*===============================================  section 4 ================================================================*/
+		.sessao-04{
+			background: white;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			min-height: 1101px;
+			max-height: auto;
+			margin: auto;
+			position: relative;
+			box-sizing: border-box;
+		}
+		#h2-sessao-4{
+			padding-top: 121px;
+			text-align: center;
+			font-family: "Bold";
+			font-size: 50pt;
+		}
+
+		#hr-sessao-4{
+			width:100%;
+			max-width: 600px;
+			min-width: 280px;
+			padding-bottom: 3px;
+			background: #820917; 
+			margin: auto;
+			margin-bottom: 57px;
+		}
+		#carrossel-2{
+			position: relative;
+		    display: flex;
+		    margin: auto;
+		    width:100%;
+		    max-width: 1200px;
+		    height: 697px;
+		    max-height: auto;
+		    overflow-x: auto;
+		    gap: 50%;
+		    justify-content: center;
+		    align-items: center;
+
+		}
+
+		.div1-carrossel-2{
+			background: blue;
+			width: 100%;
+			max-width: 790px;
+			min-width: auto;
+			height: 663px;  
+			min-height: auto;
+			position: relative;
+			display: grid;
+			justify-content: center;
+			grid-template: 150px;
+			grid-template-columns:642px 360px;
+			grid-template-rows: 1fr 1fr;
+			margin: auto;
+			background: white;
+			border-radius: 15px;
+			grid-column-gap: 19px;
+		}
+
+		#carrossel-2::-webkit-scrollbar{
+			display: none;
+		}
+		.div-interna-carrossel-2{
+			background: white;		
+			width: 100%;	
+			max-width: 360px;
+		}
+
+
+		.img1-carrossel-2{
+			max-width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+
+		.div-interna-carrossel-2 .container-texto-interno{
+			position: absolute;			 
+			max-width: max-content;
+			min-width: auto;
+			color:white;
+			padding-left: 54px;
+			padding-right: 54px;
+			top: 65%;
+
+		}
+	/*======================== definindo padroes do item 1 da grid ===============================*/
+		.div1-carrossel-2 .div-interna-carrossel-2:nth-child(1){
+			background: green;
+			position: relative;
+			grid-row: 1/3;
+			width: 100%;
+			max-width: 700px;
+			min-width: auto;
+			max-height:663px; 
+			min-height: auto;
+		}
+		.h3-carrossel-2{
+			width: 50%;
+		}
+		.paragrafo-1-carrossel-2{
+			padding-top: 10px;
+			text-align: justify;
+			opacity: .8;
+		}
+
+		.btn-1-carrossel-2{
+			font-family: "Bold";
+			font-size: 13pt;
+			position: relative;
+			float: right;
+			border:none;
+			min-width: 159px;
+			max-height: max-content;
+			min-height:31px; 
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-bottom: 20px;
+			background: rgba(105,105,105,.8);
+			color:white;
+			cursor: pointer;
+			border-radius: 4px;
+			transition: .4s;
+		}
+
+		.btn-1-carrossel-2:hover{
+			transform: scale(1.2);
+		}
+		
+	/*======================== definindo parametros dos demais itens =============================*/
+
+		.img2-carrossel-2{
+			width:100%;
+			max-width: 360px;
+			max-height: 147px;
+			border-radius: 5px;
+		}
+
+		.h4-carrossel-2{
+			padding-top: 12px;
+			padding-bottom: 15px;
+		}
+
+		.btn-2-carrossel-2{
+			background: #820917;
+			position: relative;
+			float: right;
+			color: white;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			min-width: 109px;
+			max-width: max-content;
+			height: 16px;
+			font-family: "Bold";
+			font-size: 10pt;
+			transition: .4s;
+		}
+		.btn-2-carrossel-2:hover{
+			transform: scale(1.2);
+		}
+		.div1-carrossel-2{
+			background: white;
+		}
+
+	/*======================= criando e definindo parametros iniciais apontadores carrossel 2 ===*/
+		.container-btn{
+				align-content: center; margin: auto;align-items: center;justify-content: center;
+				height: 50px; 
+				width: max-content;
+				margin-bottom: 181px; 
+			}
+		.container-btn > #direita, #centro, #esquerda{
+				width: 8px;
+				height: 10px;
+				border-radius: 50%;		
+				margin: auto;
+				border:none;	
+				background-color: rgb(128,128,128);
+				cursor: pointer;
+			}
+
+		#centro{
+				background: rgb(54,54,54);
+			}
+	/*=== parametros para o apontador/ativador do carrossel em seus estados  central ============*/
+		#ativador-carrossel-2.activeE2.centroE2 #direita{background-color: rgb(128,128,128);}
+		#ativador-carrossel-2.activeD2.centroD2 #direita{background-color: rgb(128,128,128);}
+
+		#ativador-carrossel-2.activeE2.centroE2 #centro{background: rgb(54,54,54);}
+		#ativador-carrossel-2.activeD2.centroD2 #centro{background: rgb(54,54,54);}
+
+		#ativador-carrossel-2.centroE2.activeE2 #esquerda{background-color: rgb(128,128,128);}
+		#ativador-carrossel-2.centroD2.activeD2 #esquerda{background-color: rgb(128,128,128);}
+
+	/*============================================================================================*/	
+	/*====parametros para o apontador/ativador do carrossel em seus estados esquerdo =============*/
+		#ativador-carrossel-2.activeE2 #esquerda{background: rgb(54,54,54);}
+		#ativador-carrossel-2.activeE2 #direita{background-color: rgb(128,128,128);}
+		#ativador-carrossel-2.activeE2 #centro{background-color: rgb(128,128,128);}
+
+	/*============================================================================================*/
+	/*====parametros para o apontador/ativador do carrossel em seus estados direito ==============*/
+		#ativador-carrossel-2.activeD2 #direita{background: rgb(54,54,54);}
+		#ativador-carrossel-2.activeD2 #esquerda{background-color: rgb(128,128,128);}
+		#ativador-carrossel-2.activeD2 #centro{background-color: rgb(128,128,128);}
+	/*============================================================================================*/
+				/*testes com animações*/
+
+	/*************Condições do activeD******************/
+		
+
+		#ativador-carrossel-2.activeD2 .div1-carrossel-2{		
+
+			animation-name: testeA2;
+			animation-duration: 1s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;		
+			z-index: 1;
+		}
+
+	/***************************************************/	
+	/*************Condições do activeE******************/
+
+
+		#ativador-carrossel-2.activeE2 .div1-carrossel-2{		
+			animation-name: testeB2;
+			animation-duration: 1s; 
+			animation-timing-function: ease;
+			z-index: 1;
+			animation-fill-mode: forwards;
+		}
+
+	/***************************************************/
+	/*************Condições do Centro******************/
+
+		#ativador-carrossel-2.activeE2.centroE2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroA;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: 1s;
+			z-index: 1;
+			
+		}
+
+		#ativador-carrossel-2.activeD2.centroD2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroB;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: 1s;
+			z-index: 1;
+		}
+
+	/*============== definição geral do apontador======*/
+		.seta-button{
+			padding-left: 2px;
+			height: 9px;
+			width: 10px;
+		}
+    /*=========================================================================*/	
+/*****************************************************************************************************************************/
+/*===============================================  section final ============================================================*/
+		.container-sessao-final{
+			position:relative;
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			height: 100%;
+			max-height: auto;
+			min-height: 671px;
+			background: rgb(220,220,220);
+			margin: auto; 
+			column-gap: 50px;
+		}
+	/*primeiro item do flexbox*/
+		.container-fale-conosco{
+			position: relative;
+			width: 100%;
+			max-width: 900px;
+			min-width: auto;
+			height: min-content;
+		}
+		#h2-sessao-final{
+			position: relative;
+			padding-left: 350px;
+			padding-top: 161px;
+			font-family: "Bold";
+			font-size: 50pt;
+			display: inline-flex;
+			width: 457px
+		}
+		#hr-sessao-final{
+			position: relative;
+			background: #820917;
+			padding: 2px;
+			width: 75%;
+			max-width: 450px;
+			min-width: 280px;
+			margin-right: 0px;
+			margin-left:350px;
+		}
+	/*==========================*/	
+	/*=segundo item do flex box=*/
+		.container-form{
+			position: relative;
+			width: 100%;
+			max-width: 755px;
+			height: max-content;
+		}
+
+		.campos-form{
+			color: rgb(128,128,128);
+			margin-top: 60px;
+		}
+		.text-form{
+			width: 100%;
+			max-width: 755px;
+			min-width: 280px;
+			height: 52px;
+			border-radius: 5px;
+			border-style: none;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		.text-form:focus{
+			
+			text-transform: uppercase;
+			outline-color: red;
+		}
+		#form-mensagem{
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+			height: 100%;
+			min-height: 227px;
+			max-height: 227px;
+		}
+
+		#btn-form{
+			margin-top: 20px;
+			margin-bottom: 72px; 
+			height: 40px;
+			width: 119px;
+			background: #820917;
+			color: white;
+			cursor: pointer;
+			border-radius: 5px;
+			border: none;
+			text-align: center;
+			display: block;
+		}
+	/*==============================*/	
+
+			@media(max-width: 1250px){
+			#carrossel-2{
+			position: relative;
+		    display: flex;
+		    flex-wrap: wrap;
+		    margin: auto;
+		    width:100%;
+		    max-width: 1200px;
+		    min-width: 280px;
+		    height: 697px;
+		    max-height: 697px;
+		    overflow-y: scroll;
+		    overflow-x: auto;
+		    gap: 50%;
+		    justify-content: center;
+		    align-items: center;
+
+
+		}
+
+		.div1-carrossel-2{
+			background: blue;
+			width: 100%;
+			max-width: 790px;
+			min-width: auto;
+			height: 663px;  
+			min-height: auto;
+			position: relative;
+			display: grid;
+			justify-content: left;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			margin: auto;
+			background: white;
+			border-radius: 15px;
+			grid-column-gap: 19px;
+			overflow-y: scroll; 
+		}
+		.div1-carrossel-2::-webkit-scrollbar{
+			width: 0px;
+		}
+		#h2-sessao-4{
+			padding-top: 12px;
+			text-align: center;
+			font-family: "Bold";
+			font-size: 50pt;
+		}
+
+
+				/*testes com animações*/
+		/*************Condições do activeD******************/
+		
+
+		#ativador-carrossel-2.activeD2 .div1-carrossel-2{		
+
+			animation-name: testeA2;
+			animation-duration: .6s;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;		
+			z-index: 1;
+		}
+
+
+		/***************************************************/	
+		/*************Condições do activeE******************/
+
+
+		#ativador-carrossel-2.activeE2 .div1-carrossel-2{		
+			animation-name: testeB2;
+			animation-duration: .6s; 
+			animation-timing-function: ease;
+			z-index: 1;
+			animation-fill-mode: forwards;
+		}
+
+		/***************************************************/
+		/*************Condições do Centro******************/	
+
+		#ativador-carrossel-2.activeE2.centroE2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroA;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: .6s;
+			z-index: 1;
+			
+		}
+
+		#ativador-carrossel-2.activeD2.centroD2 .div1-carrossel-2{
+			animation-name: ExcecaoCentroB;
+			animation-timing-function: ease;
+			animation-fill-mode: forwards;
+			animation-duration: .6s;
+			z-index: 1;
+		}
+
+		.div-interna-carrossel-2 .container-texto-interno{
+			position: absolute;		
+			width: 80%;	 
+			max-width: max-content;
+			min-width: 130px;
+			height: 50%;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			color:white;
+			padding-left: 10px;
+			padding-right: 10px;
+			top: 50%;
+		}
+
+		.container-texto2-interno{
+			width: 100%;
+			max-width: max-content;
+			height: 170px;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			text-align: justify;
+		}
+/*================================================================*/
+		.container-texto-interno::-webkit-scrollbar{width: 5px;}
+		.container-texto-interno::-webkit-scrollbar-track{
+			background: rgba(54,54,54,0);
+			border-radius: 20px;
+			transition: 1s;
+		}
+		.container-texto-interno::-webkit-scrollbar-thumb{
+			background: rgba(124,124,124,0.3);
+			border-radius: 25px;
+		}
+
+		.container-texto2-interno::-webkit-scrollbar{width: 5px;}
+		.container-texto2-interno::-webkit-scrollbar-track{
+			background: rgba(54,54,54,0);
+			border-radius: 20px;
+			transition: 1s;
+		}
+		.container-texto2-interno::-webkit-scrollbar-thumb{
+			background: rgba(124,124,124,0.3);
+			border-radius: 25px;
+		}
+
+
+/*==================================================================*/		
+		.container-texto-interno::-webkit-scrollbar-track:hover{
+			background: rgba(54,54,54,0.2);
+		}
+		.container-texto-interno::-webkit-scrollbar-thumb:hover{
+			outline-width: 1px;
+			outline-color: red;
+			background: rgba(124,124,124,1);
+		}
+
+		.container-texto2-interno::-webkit-scrollbar-track:hover{
+			background: rgba(54,54,54,0.2);
+		}
+		.container-texto2-interno::-webkit-scrollbar-thumb:hover{
+			outline-width: 1px;
+			outline-color: red;
+			background: rgba(124,124,124,1);
+				}
+/*==============================================*/
+
+
+		#centro{
+				background: rgb(128,128,128);
+			}
+
+		#direita{
+				background: rgb(54,54,54);
+			}
+
+		@keyframes testeA2{
+			0%{transform: translateY(0%);opacity: 0.1;}
+			50%{opacity: 0.2;}
+			100%{transform: translateY(3%);opacity: 1;},
+
+		}
+
+		@keyframes testeB2{
+			0%{transform: translateY(0%);opacity: 0.1;}
+			50%{opacity: 0.4;}
+			100%{transform: translateY(-300%);}
+		}
+		@keyframes ExcecaoCentroA{
+			0%{	transform: translateY(0%); ;opacity: 0.1;}
+			50%{transform: translateY(-88%);opacity: 0.1}				
+			100%{transform: translateY(-149%);opacity: 1;}	
+		}
+		@keyframes ExcecaoCentroB{
+			0%{	transform: translateY(176%); opacity: 0.1;}
+			50%{transform: translateY(88%);opacity: 0.1}				
+				100%{transform: translateY(-149%);opacity: 1;}		
+		}
+
+		}
+
+/******************************************************************************************************************************/
+
+/*================================================ footer ====================================================================*/
+/*======================================= footer ======================================*/
+		.rodape{
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			margin: auto;
+			background-image: url("../.imagens/Lotes/Grupo de máscara 884.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	/*===================================priimeiro container ============================*/
+		.container-rodape{
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr 1fr ;
+			width: 100%;
+			max-width: 1920px;
+			min-width: 280px;
+			margin: auto;
+			height: 100%;
+			min-height: 423px;
+			justify-content: center;
+			column-gap: 12%;
+		}
+
+		.texto-footer{
+			position: relative;
+			text-align-last: left;
+			color: white;
+			word-wrap: wrap;
+		}
+		.img-footer{
+			display: inline-flex;
+			width: 32%;
+			height: 35%;
+			margin: auto;
+			margin-left: 50%; 
+		}
+		#img1-footer{
+			width: 100%;			
+		}
+		 #img2-footer, #img3-footer{
+			width: 50%;
+		}
+		#img-footer-1{
+			position: relative;
+			top: 20%;
+			align-self: bottom;
+		}
+
+		#img-footer-2{
+			position: relative;
+			top: -30%;
+		}
+
+		#text-footer-1{
+			align-self: center;
+		}
+
+		#text-footer-2{
+			align-self: top;
+		}
+
+		.link-footer{
+			text-decoration: none;
+			color:white;
+			cursor: pointer;
+		}
+	/*=====================================================================================*/
+	/*=================================segundo container===================================*/
+		.container-rodape-final{
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			width: 100%;
+			border:none;
+			background: #820917;
+			height: 79px;
+			text-align: center;
+			align-self: center;
+			justify-content: center;
+			align-content: center;
+			column-gap: 10%;
+
+		}
+
+		.srv > img{
+			padding-right: 10px;
+		}
+
+		.politicas{
+			display: inline-flex;
+			width: 100%;
+			color: white;
+		}
+		.politicas_1{
+			padding-left: 10%
+		}
+
+		.politicas_link{
+			width: 100%;
+			color: white;
+			text-align: left;
+			text-decoration: none;
+		}
+	/*===================================================================*/
+/******************************************************************************************************************************/
+
