@@ -199,7 +199,7 @@
 			<nav id="navegador-scroll">
 
 			<div class="div-carrossel-1">
-				<iframe class="iframe-carrossel" src="https://www.youtube.com/embed/2prrw9_yhNw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="iframe-carrossel" id="iframe-tela-inteira" onclick="Tela_Inteira()" src="https://www.youtube.com/embed/2prrw9_yhNw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 				<h2  class="h2-carrossel">Nome do</h2>
 				<img class="svg-carrossel" src=".imagens/svg/facebook.svg">
@@ -462,7 +462,7 @@
 				<input class="text-form" type="text" name="nome" placeholder="Ex:eduardo dos santos">
 				<h2 class="campos-form">Email</h2>
 				<input class="text-form" type="mail" name="email" placeholder="Ex:dados@dados.com.br ">
-				<h2 class="campos-form">Menssagem</h2>
+				<h2 class="campos-form">Mensagem</h2>
 				<textarea class="text-form" id="form-mensagem" name="mensagem"></textarea>	
 				<input type="button" value="enviar mensagens" id="btn-form" onclick="Checar_Dados()">
 			</form>								<!--  formulario criado de acordo com a documentação porem seria interessante um botão para limpar caso cliente erre no preenchimento -->		
@@ -521,4 +521,13 @@
 	<script src=".Script/.Carrossel_Script/.Carrossel_1.js"></script>
 	<script src=".Script/.Calculos_de_scroll_e_validador_de_formulario/calculo_de_scroll_e_validador_de_formulario.js"></script>
 	<script src=".Script/.Ativador_btn_mobile_e_baloes/ativador_btn_mobile_e_baloes.js"></script>
+	<script type="text/javascript">
+		function Tela_Inteira(){
+//			var frame = document.getElementById('iframe-tela-inteira');
+
+//			frame.style.display = "none";
+			alert("sucesso");
+
+		}
+	</script>
 </html>
