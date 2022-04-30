@@ -342,16 +342,6 @@
 		.qt-direita{
 			float: right;
 		}
-		.iframe-carrossel{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			justify-content: center;
-			left: 0%;
-			min-width: 100%;
-
-		}
-
 	}
 
 	@media(max-width: 620px){

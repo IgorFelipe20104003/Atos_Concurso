@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Language" content="pt-br, en, es">
 	<meta name="viewport" content="width=device-width,initial-sacle=1.0">
+
 	<link rel="stylesheet" type="text/css" href=".CSS/Header_Main_Sections_Footer.css">
 	<link rel="stylesheet" type="text/css" href=".CSS/KeyFrames.css">
 	<link rel="stylesheet" type="text/css" href=".CSS/MediaQuery.css">
+
 </head>
 <body id="scroll-fixed-top">
 <header class="container-Cabecalho">           <!-- cabeçalho -->
@@ -31,16 +33,16 @@
 			<nav id="navegador">
 				<button id="btn-lista"><span id="burger"></span></button>
 				<ul id="menu">
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-01"><em><a class="links" href= "#Quem somos">  Quem somos  </a></em></li>
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-02" ><em><a class="links" href="#Solucoes"  >  Soluçoes    </a></em></li>		
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-03"><em><a class="links" href= "#Parceiros" >  Parceiros   </a></em></li>
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-04" ><em><a class="links" href="#Clientes"  >  Clientes    </a></em></li>	<!-- não entendi qual parte seria então lancei para o footer -->	
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-05"><em><a class="links" href= "#Blog"      >  Blog        </a></em></li>
-					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-06" ><em><a class="links"href= "#Contato"   >  Contato     </a></em></li>	
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-01"><em><a class="links" id="link-01-header" href= "#Quem somos">  Quem somos  </a></em></li>
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-02" ><em><a class="links"id="link-02-header" href="#Solucoes"  >  Soluçoes    </a></em></li>		
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-03"><em><a class="links" id="link-03-header" href= "#Parceiros" >  Parceiros   </a></em></li>
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-04" ><em><a class="links" id="link-04-header" href="#Clientes"  >  Clientes    </a></em></li>	<!-- não entendi qual parte seria então lancei para o footer -->	
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-05"><em><a class="links" id="link-05-header" href= "#Blog"      >  Blog        </a></em></li>
+					<li class="lista-rolagem-fixa" id="list-rolagem-fixa-06" ><em><a class="links" id="link-06-header"href= "#Contato"   >  Contato     </a></em></li>	
 				</ul>
 			</nav>
 		<!--	Teste falho <a href="translate.google.com.br/translate?u=&sl=pt&tl=es&ie=UTF-8"> -->
-			<img class="bandeiras"id="bandeira-01"src=".imagens/svg/eua.svg"></a>
+			<img class="bandeiras" id="bandeira-01" src=".imagens/svg/eua.svg"></a>
 			<img class="bandeiras" id="bandeira-02" src=".imagens/svg/espanha.svg">
 			<img class="bandeiras" id="bandeira-03" src=".imagens/svg/br.svg">
 	</div>
@@ -61,9 +63,9 @@
 				<p class="paragrafo-sessao-01" id="sessao-01-p">A ATOS CAPITAL é uma Fintech, uma empresa de serviços financeiros, 100% brasileira e genuinamente nordestina,especializada na Gestão e Conciliação de Cartões Eletrônicos. Atuamos atendendo diversos segmentos da economia que
 				possuem grande participação de seus recebíveis financeiros por meio de transações com cartões eletrônicos de diversas
 				Adquirentes e Bandeiras.</p>
-				<p class="paragrafo-sessao-01">Com larga experiência, equipe capacitada e tecnologia, somos uma empresa parceira SAP, oferecendo aos nossos clientes
+				<p class="paragrafo-sessao-01" id="sessao-02-p">Com larga experiência, equipe capacitada e tecnologia, somos uma empresa parceira SAP, oferecendo aos nossos clientes
 				uma experiência única identificando e solucionando de forma eficiente problemas como perdas e fraudes.</p>
-				<p class="paragrafo-sessao-01">Nossa relação com nossos clientes é de parceria baseada em um relacionamento saudável e duradouro.</p>
+				<p class="paragrafo-sessao-01"  id="sessao-03-p"> Nossa relação com nossos clientes é de parceria baseada em um relacionamento saudável e duradouro.</p>
 				</div>
 
 			</div>
@@ -81,28 +83,31 @@
 
 				<div class="div-principal" id="ativador-divs-internas"> <!-- ativador de efeitos para aparecer o texto -->
 
-					<div class="div-interna" id="div-1" ><img class="img-div-interna" src=".imagens/logos/b1 cards.svg"><button class="btn-ver-mais" onclick="selecionar('div-1')"> ver mais</button>
+					<div class="div-interna" id="div-1" ><img class="img-div-interna" src=".imagens/logos/b1 cards.svg"><button class="btn-ver-mais" onclick="selecionar('div-1')" id="btn-ver-main-01"> ver mais</button>
 					<span id="texto-1">  		<!-- textos que ficam ocultos estam dentro dos spans-->
 						<h3>B1Cards</h3>   
 
-						<p>O SAP Addon B1Cards, é a solução Oficial certificada pela SAP para a Reconciliação de
+						<p id="p-B1Cards">O SAP Addon B1Cards, é a solução Oficial certificada pela SAP para a Reconciliação de
 						Meios de Pagamento para SAP Business One.
 						   Integrada a mais de 130 atores do mercado de Meios de Pagamento, bem como a diversos PDV's, TEF,
 						Sefaz e muitas outras fontes relevantes de informações, atua na reconciliação de cartões,
 						vouchers, adquirentes, gateways de pagamento para E-Commerces, Marketplaces,Deliverys,
-						Contas Digitais, Dinheiro, Pix, TED, DOC e muito mais.</p></span></div>
-					<div class="div-interna"id="div-2" ><img class="img-div-interna" src=".imagens/logos/b1 pay.svg"><button class="btn-ver-mais" onclick="selecionar('div-2')"> ver mais</button>
+						Contas Digitais, Dinheiro, Pix, TED, DOC e muito mais.</p></span>
+					</div>
+
+					<div class="div-interna"id="div-2" ><img class="img-div-interna" src=".imagens/logos/b1 pay.svg"><button class="btn-ver-mais"  id="btn-ver-main-02" onclick="selecionar('div-2')"> ver mais</button>
 					<span id="texto-2">
 						<h3>B1Pay</h3>
-						<p>O SAP Addon B1Pay, é uma solução de Pagamento Eletrônico para SAP Business One,
+						<p id="p-B1Pay">O SAP Addon B1Pay, é uma solução de Pagamento Eletrônico para SAP Business One,
 					atuando como mais uma alternativa para a automação dos processos de
 					Contas a Pagar, de forma integrada e automatizada junto aos principais
-					bancos brasileiros.</p></span></div> 
-					<div class="div-interna"id="div-3"><img class="img-div-interna" src=".imagens/logos/b1 bill.svg"><button class="btn-ver-mais" onclick="selecionar('div-3')"> ver mais</button>
+					bancos brasileiros.</p></span>
+				</div> 
+					<div class="div-interna"id="div-3"><img class="img-div-interna" src=".imagens/logos/b1 bill.svg"><button class="btn-ver-mais" id="btn-ver-main-03"  onclick="selecionar('div-3')"> ver mais</button>
 						<span id="texto-3">
 						<h3>B1Bill</h3>
 
-						<p>O SAP Addon B1Bill, é uma solução de Emissão de Boletos e Cobrança, atuando como uma alternativa para a automação dos processos de Faturamento/Billing 
+						<p  id="p-B1Bill">O SAP Addon B1Bill, é uma solução de Emissão de Boletos e Cobrança, atuando como uma alternativa para a automação dos processos de Faturamento/Billing 
 
 						em larga escala.
 
@@ -110,11 +115,11 @@
 
 						de gestão executadas no B1Bill que proporcionam uma gestão a vista de todo o processo financeiro junto ao SAP Business One.</p>
 					</span></div>
-					<div class="div-interna"id="div-4"><img class="img-div-interna" src=".imagens/logos/B1-TaxInvoice.svg"><button class="btn-ver-mais" onclick="selecionar('div-4')"> ver mais</button>
+					<div class="div-interna"id="div-4"><img class="img-div-interna" src=".imagens/logos/B1-TaxInvoice.svg"><button class="btn-ver-mais" id="btn-ver-main-04" onclick="selecionar('div-4')"> ver mais</button>
 						<span id="texto-4">
 						<h3>B1TaxInvoices</h3>
 
-						<p>O SAP Addon B1TaxInvoices, é uma solução de Automação e Gestão de Notas/Invoices para o
+						<p id="p-B1TaxxInovoices">O SAP Addon B1TaxInvoices, é uma solução de Automação e Gestão de Notas/Invoices para o
 
 						SAP Business One. Atua na Entrada de Documentos,
 
@@ -126,21 +131,21 @@
 
 						e a geração no SAP.</p>								
 						</span></div>
-					<div class="div-interna"id="div-5"><img class="img-div-interna" src=".imagens/logos/b1 expenses.svg"><button class="btn-ver-mais" onclick="selecionar('div-5')"> ver mais</button>
+					<div class="div-interna"id="div-5"><img class="img-div-interna" src=".imagens/logos/b1 expenses.svg"><button class="btn-ver-mais" id="btn-ver-main-05" onclick="selecionar('div-5')"> ver mais</button>
 						<span id="texto-5">
 						<h3>B1Expenses</h3>
 
-						<p>O SAP Addon B1Expenses, é uma solução de Gestão de Despesas Corporativas para SAP Business
+						<p id="p-B1Expenses">O SAP Addon B1Expenses, é uma solução de Gestão de Despesas Corporativas para SAP Business
 
 						One. Mais uma alternativa para a gestão de despesas integrado aos principais
 
 						bancos brasileiros e também bancos americanos.</p>						
 						</span></div>
-					<div class="div-interna"id="div-6"><img class="img-div-interna" src=".imagens/logos/cards4.svg"><button class="btn-ver-mais" onclick="selecionar('div-6')">ver mais</button>
+					<div class="div-interna"id="div-6"><img class="img-div-interna" src=".imagens/logos/cards4.svg"><button class="btn-ver-mais" id="btn-ver-main-06"  onclick="selecionar('div-6')">ver mais</button>
 						<span id="texto-6">
 						<h3>Cards/4</h3>
 
-						<p>O SAP Addon Cards/4, é a solução para a Reconciliação de
+						<p id="p-Cards">O SAP Addon Cards/4, é a solução para a Reconciliação de
 
 						Meios de Pagamento para SAP ECC ou S/4 Hana.
 
@@ -154,11 +159,11 @@
 
 						Deliverys, Contas Digitais, Dinheiro, Pix, TED, DOC e muito mais.</p>
 						</span></div>
-					<div class="div-interna"id="div-7"><img class="img-div-interna" src=".imagens/logos/cardservices.svg"><button class="btn-ver-mais" onclick="selecionar('div-7')">ver mais</button>
+					<div class="div-interna"id="div-7"><img class="img-div-interna" src=".imagens/logos/cardservices.svg"><button class="btn-ver-mais" id="btn-ver-main-07"  onclick="selecionar('div-7')">ver mais</button>
 						<span id="texto-7">
 						<h3>CardServices</h3>
 
-						<p>Solução da Atos Capital para a Reconciliação de Meios de Pagamento para mais de 50 ERPs de mercado,
+						<p id="p-CardServices">Solução da Atos Capital para a Reconciliação de Meios de Pagamento para mais de 50 ERPs de mercado,
 
 						em especial, todas as soluções da TOTVS, todas as soluções da Linx, ERP Mega, entre outros.
 
@@ -170,11 +175,11 @@
 
 						Deliverys, Contas Digitais, Dinheiro, Pix, TED, DOC e muito mais.</p>
 						</span></div>
-					<div class="div-interna"id="div-8"><img class="img-div-interna" src=".imagens/logos/marca_taxservices-01.svg"><button class="btn-ver-mais" onclick="selecionar('div-8')">ver mais</button>
+					<div class="div-interna"id="div-8"><img class="img-div-interna" src=".imagens/logos/marca_taxservices-01.svg"><button class="btn-ver-mais"id="btn-ver-main-08"  onclick="selecionar('div-8')">ver mais</button>
 						<span id="texto-8">
 						<h3>TaxServices</h3>
 
-						 <p>O TaxServices, é uma solução de Automação e Gestão de Notas/Invoices para mais de 50 ERPs de mercado,
+						 <p id="p-TaxServices">O TaxServices, é uma solução de Automação e Gestão de Notas/Invoices para mais de 50 ERPs de mercado,
 
 						em especial, todas as soluções da TOTVS, todas as soluções da Linx, ERP Mega, entre outros.
 
@@ -201,7 +206,7 @@
 			<div class="div-carrossel-1">
 				<iframe class="iframe-carrossel" id="iframe-tela-inteira" onclick="Tela_Inteira()" src="https://www.youtube.com/embed/2prrw9_yhNw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-				<h2  class="h2-carrossel">Nome do</h2>
+				<h2  class="h2-carrossel" id="1°-h2-carrossel1">Nome do</h2>
 				<img class="svg-carrossel" src=".imagens/svg/facebook.svg">
 				<img class="svg-carrossel" src=".imagens/svg/instagram.svg">
 				<img class="svg-carrossel" src=".imagens/svg/www.svg">
@@ -458,13 +463,13 @@
 
 		<div class="container-form">
 			<form name="dados" id="formulario">
-				<h2 class="campos-form">Nome</h2>
+				<h2 class="campos-form" id="name">Nome</h2>
 				<input class="text-form" type="text" name="nome" placeholder="Ex:eduardo dos santos">
-				<h2 class="campos-form">Email</h2>
+				<h2 class="campos-form" id="mail">Email</h2>
 				<input class="text-form" type="mail" name="email" placeholder="Ex:dados@dados.com.br ">
-				<h2 class="campos-form">Mensagem</h2>
+				<h2 class="campos-form" id="message">Mensagem</h2>
 				<textarea class="text-form" id="form-mensagem" name="mensagem"></textarea>	
-				<input type="button" value="enviar mensagens" id="btn-form" onclick="Checar_Dados()">
+				<input type="button" name="enviar" value="enviar mensagens" id="btn-form" onclick="Checar_Dados()">
 			</form>								<!--  formulario criado de acordo com a documentação porem seria interessante um botão para limpar caso cliente erre no preenchimento -->		
 		</div>
 	</div>
@@ -522,12 +527,333 @@
 	<script src=".Script/.Calculos_de_scroll_e_validador_de_formulario/calculo_de_scroll_e_validador_de_formulario.js"></script>
 	<script src=".Script/.Ativador_btn_mobile_e_baloes/ativador_btn_mobile_e_baloes.js"></script>
 	<script type="text/javascript">
-		function Tela_Inteira(){
-//			var frame = document.getElementById('iframe-tela-inteira');
+		const txt_Eua = document.getElementById('bandeira-01');
+		txt_Eua.addEventListener('click', translate_Eua);
 
-//			frame.style.display = "none";
-			alert("sucesso");
+		function translate_Eua(){
+			// Header
 
+				/*lista traduzida*/
+					document.getElementById("link-01-header").innerHTML = "About us";
+					document.getElementById("link-02-header").innerHTML = "Solutions";
+					document.getElementById("link-03-header").innerHTML = "Partners ";
+					document.getElementById("link-04-header").innerHTML = "Customers";
+					document.getElementById("link-05-header").innerHTML = "Blog";
+
+					document.getElementById("link-06-header").innerHTML = "Contact";
+				/***************************************/
+
+				/* texto por traz da primeira imagem*/
+
+					document.getElementById("p-header").innerHTML = "Suite B1Cards - Reconciliation Addon for SAP Business One";
+				/*=====================================*/
+				
+				/*txt section-1 A Atos capital*/
+
+				 /*h2*/
+				  document.getElementById("h2-sessao-01").innerHTML = "the capital actions";	
+				 /***************************************/ 
+
+				 /*paragrafos 1 - 2 - 3*/
+				  document.getElementById("sessao-01-p").innerHTML = "ATOS CAPITAL is a Fintech, a financial services company, 100% Brazilian and genuinely northeastern, specialized in the Management and Reconciliation of Electronic Cards. We operate in various segments of the economy that have a large participation of their financial receivables through transactions with electronic cards from various acquirers and card brands.";
+
+				  document.getElementById("sessao-02-p").innerHTML = "With extensive experience, a qualified team, and technology, we are a SAP partner company, offering our clients a unique experience by efficiently identifying and solving problems such as losses and fraud.";
+
+				  document.getElementById("sessao-03-p").innerHTML = "Our relationship with our clients is one of partnership based on a healthy, long-lasting relationship.";
+				/************************************************/ 
+
+
+			/*txt main*/
+				/*h2 da main*/
+					document.getElementById("h2-center").innerHTML = "Our solouctions";
+				/*cada trecho do flex-box */
+					/*botões*/
+						document.getElementById("btn-ver-main-01").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-02").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-03").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-04").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-05").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-06").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-07").innerHTML = "Our solouctions";
+						document.getElementById("btn-ver-main-08").innerHTML = "Our solouctions";
+					/*******************/
+					/*títulos ocultos*/
+
+					document.getElementById("p-B1Cards").innerHTML 			  = "SAP Addon B1Cards, is the Official SAP-certified solution for the Reconciliation of Reconciliation for SAP Business One.   Integrated to more than 130 players of the Payment Means market, as well as to several POS, TEF,			Sefaz, and many other relevant sources of information, acts in the reconciliation of cards acquirers, payment gateways for E-Commerces, Marketplaces, Deliverys,Digital Accounts, Cash, Pix, TED, DOC and much more.";
+
+					document.getElementById("p-B1Pay").innerHTML 				="SAP Addon B1Pay, is an Electronic Payment solution for SAP Business One, acting as another alternative for the automation of the Accounts Payable processes, in an integrated and automated way with the main Brazilian banks.";
+
+					document.getElementById("p-B1Bill").innerHTML				="SAP Addon B1Bill, is a solution for Billing and Collection, acting as an alternative for the automation of large-scale Billing/Billing processes. The whole structure of renegotiations management and management treatments executed in B1Bill that provide a visual management of the whole financial process with SAP Business One.";
+
+					document.getElementById("p-B1TaxxInovoices").innerHTML		="SAP Addon B1TaxInvoices, is an invoice/invoice automation and management solution for SAP Business One. Acts in the Entry of Documents, updating Inventory and Generation of Accounts Receivable in SAP. Integrated to Sefaz through the digital certificates with access via Recipient Manifest, the B1TaxInvoices performs the automatic processing of Notes, information management and storage, and generation in SAP";
+
+					document.getElementById("p-B1Expenses").innerHTML			= "SAP Addon B1Expenses, is a Corporate Expense Management solution for SAP Business One. One more alternative for expenses management integrated with the main Brazilian banks and also American banks.";
+
+					document.getElementById("p-Cards").innerHTML				="SAP Addon Cards/4, is the solution for the Means of Payment Reconciliation for SAP ECC or S/4 Hana. Integrated to more than 130 players in the Payment Means market and to SAP ECC or S/4 Hana through Atos Capital's Middleware, it performs the reconciliation of cards, vouchers, acquirers, payment gateways for E-Commerces, Marketplaces, Deliverys, Digital Accounts, Cash, Pix, TED, DOC and more.";
+
+					document.getElementById("p-CardServices").innerHTML				="Atos Capital's solution for Means of Payment Reconciliation for more than 50 market ERPs, especially all TOTVS solutions, all Linx solutions, ERP Mega, among others. Integrated with more than 130 players in the Payment Means market, it operates in the reconciliation of cards, vouchers, acquirers, payment gateways for E-Commerces, Marketplaces, Deliverys, Digital Accounts, Cash, Pix, TED, DOC, and more.";
+
+					document.getElementById("p-TaxServices").innerHTML			="TaxServices is a solution for Automation and Management of Notes/Invoices for more than 50 ERPs in the market, especially all TOTVS solutions, all Linx solutions, ERP Mega, among others. Automated Document Entry, Stock Update and Generation of Accounts Receivable in the ERPs, Integrated with Sefaz through digital certificates with access via Recipient Manifest TaxServices performs automatic processing of Notes, information management and storage, and generation in the ERPs.";
+
+					/*******************/	
+
+			/*carrossel section 3*/
+					const h2 = document.getElementsByClassName("h2-carrossel");	
+					h2[0].innerHTML = "Name of";
+					h2[1].innerHTML = "Name of";
+					h2[2].innerHTML = "Name of";
+					h2[3].innerHTML = "Name of";
+					h2[4].innerHTML = "Name of";
+					h2[5].innerHTML = "Name of";
+			/*parceiros*/
+			       document.getElementById("h2-parceiros").innerHTML = "partners";
+
+			       const parc_paragrafos = document.getElementsByClassName("paragrafo-parceiros");
+			       /*Sap*/
+				       parc_paragrafos[0].innerHTML = "Atos Capital - Financial Services, is an Official Partner of SAP SAP, a German multinational company that has been operating in Brazil for 50 years, is the largest management software company in the world. Present in over 180 countries, with more than 440 thousand clients from the largest and most innovative companies on the planet.";
+
+				       parc_paragrafos[1].innerHTML = "Through PartnerEdge, Atos Capital conquered the approval as Official Partner, framed as SAP Solution Provider with the officially certified solution, B1Cards - Reconciliation of Payment Means for SAP Business One.";
+
+				        parc_paragrafos[2].innerHTML = "Atos Capital is currently the leader in this segment in Brazil, with several success cases in large and expressive companies in the national scenario.";
+
+			       /*B1Aliance*/
+			       		parc_paragrafos[3].innerHTML = "B1Alliance is the alliance of official SAP partner companies in Brazil, specialists in business verticals that aims to support the SAP Business One ecosystem.";
+			       		parc_paragrafos[4].innerHTML = "Present in over 12 different countries between Latin America, the United States and Europe.";
+			       		parc_paragrafos[5].innerHTML = "It has solutions for various verticals that together with SAP Business One help companies from various segments with an integrated solution that is easy to implement.";
+			       		parc_paragrafos[6].innerHTML = "Atos Capital was approved in the selection process, becoming an integral member of the Alliance that has the main companies in the ecosystem.";
+			/*bLOG TA NA MIDIA*/
+			 document.getElementById("h2-sessao-4").innerHTML = "Blog | In the Media";
+
+			 const carrossel_blog1_title = document.getElementsByClassName("h3-carrossel-2");
+			 carrossel_blog1_title[0].innerHTML = "Atos Capital is sponsor of SAP Partner Sales Meeting 2021";
+
+			 carrossel_blog1_title[1].innerHTML = "Atos Capital is sponsor of SAP Partner Sales Meeting 2021";
+
+			 carrossel_blog1_title[2].innerHTML = "Atos Capital is sponsor of SAP Partner Sales Meeting 2021";
+
+			 const carrossel_blog1_p = document.getElementsByClassName("paragrafo-1-carrossel-2");
+			 carrossel_blog1_p[0].innerHTML = "The biggest event of the SAP Business One Ecosystem in Brazil, arrives in São Paulo in a new format, meeting all the health rules stipulated by the Ministry of Health and in a hybrid model (in-person and online), providing the most innovative, fun, and technological solutions to SAP Business One Brazil partners.";
+
+			 carrossel_blog1_p[1].innerHTML = "The biggest event of the SAP Business One Ecosystem in Brazil, arrives in São Paulo in a new format, meeting all the health rules stipulated by the Ministry of Health and in a hybrid model (in-person and online), providing the most innovative, fun, and technological solutions to SAP Business One Brazil partners.";
+
+			 carrossel_blog1_p[2].innerHTML = "The biggest event of the SAP Business One Ecosystem in Brazil, arrives in São Paulo in a new format, meeting all the health rules stipulated by the Ministry of Health and in a hybrid model (in-person and online), providing the most innovative, fun, and technological solutions to SAP Business One Brazil partners.";
+
+			const carrossel_blog1_btn = document.getElementsByClassName("btn-1-carrossel-2");
+			 carrossel_blog1_btn[0].innerHTML = "Read the Full Article";
+			 carrossel_blog1_btn[1].innerHTML = "Read the Full Article";
+			 carrossel_blog1_btn[2].innerHTML = "Read the Full Article";
+
+			 const carrossel_blog1_btn2 = document.getElementsByClassName("btn-2-carrossel-2");
+			 carrossel_blog1_btn2[0].innerHTML = "Full Article >";
+			 carrossel_blog1_btn2[1].innerHTML = "Full Article >";
+			 carrossel_blog1_btn2[2].innerHTML = "Full Article >";
+			 carrossel_blog1_btn2[3].innerHTML = "Full Article >";
+			 carrossel_blog1_btn2[4].innerHTML = "Full Article >";
+			 carrossel_blog1_btn2[5].innerHTML = "Full Article >";
+
+
+			 const carrossel_blog2_h4 = document.getElementsByClassName("h4-carrossel-2");
+
+			 carrossel_blog2_h4[0].innerHTML = "Granado Pharmácias Adopts B1 Capital Suite";
+			 carrossel_blog2_h4[1].innerHTML = "BBlend Innovates in Management with B1Cards Suite";
+
+			 carrossel_blog2_h4[2].innerHTML = "Granado Pharmácias Adopts B1 Capital Suite";
+			 carrossel_blog2_h4[3].innerHTML = "BBlend Innovates in Management with B1Cards Suite";
+
+			 carrossel_blog2_h4[4].innerHTML = "Granado Pharmácias Adopts B1 Capital Suite";
+			 carrossel_blog2_h4[5].innerHTML = "BBlend Innovates in Management with B1Cards Suite";
+
+			 const carrossel_blog2_p2 = document.getElementsByClassName("paragrafo-2-carrossel-2");
+
+			 carrossel_blog2_p2[0].innerHTML = "With a history of more than 150 years in the market, Granado Pharmácias, one of the							one of the main cosmetics companies in Brazil, with industry, more than 80 stores throughout all ...";
+			 carrossel_blog2_p2[1].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+			 carrossel_blog2_p2[2].innerHTML = "With a history of more than 150 years in the market, Granado Pharmácias, one of the							one of the main cosmetics companies in Brazil, with industry, more than 80 stores throughout all ...";
+			 carrossel_blog2_p2[3].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+			 carrossel_blog2_p2[4].innerHTML = "With a history of more than 150 years in the market, Granado Pharmácias, one of the							one of the main cosmetics companies in Brazil, with industry, more than 80 stores throughout all ...";
+			 carrossel_blog2_p2[5].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+
+			/*section final*/ 
+				document.getElementById("h2-sessao-final").innerHTML = "Talk to us"; 
+				document.getElementById("name").innerHTML = "Name";
+				document.getElementById("mail").innerHTML = "E-Mail";
+				document.getElementById("message").innerHTML = "Message";
+				document.dados.enviar.value = "Send Message";
+
+			/*footer pt1*/
+			
+			 const footer_p = document.getElementsByClassName("texto-footer");
+			 footer_p[0].innerHTML = "São Paulo Unit:<br>Paulista Avenue, 575 - Golden Baron Building<br>White, 19º walk - Nice view<br>São Paulo - SP<br>(11) 3522-7018";
+			 footer_p[1].innerHTML = "Base of Operations - Northeast:<br>Street Dr° Roberto Ribeiro,78 - Grageru<br>Aracaju – SE<br>(79)3042-4048";
+			/*footer pt2*/
+			 const politicas = document.getElementsByClassName("politicas_link");
+			 politicas[0].innerHTML = "Privacy Policies";
+			 politicas[1].innerHTML = "Privacy Policies";
 		}
+
+
+	</script>
+	<script type="text/javascript">
+		const txt_ESP = document.getElementById('bandeira-02');
+		txt_ESP.addEventListener('click', translate_ESP);
+		function translate_ESP(){
+				// Header
+
+				/*lista traduzida*/
+					document.getElementById("link-01-header").innerHTML = "Sobre Nosotros";
+					document.getElementById("link-02-header").innerHTML = "Soluciones";
+					document.getElementById("link-03-header").innerHTML = "Socios";
+					document.getElementById("link-04-header").innerHTML = "Clientes";
+					document.getElementById("link-05-header").innerHTML = "Blog";
+
+					document.getElementById("link-06-header").innerHTML = "Contacto";
+				/***************************************/
+
+				/* texto por traz da primeira imagem*/
+
+					document.getElementById("p-header").innerHTML = "Suite B1Cards - Complemento de reconciliación para SAP Business One";
+				/*=====================================*/
+				
+				/*txt section-1 A Atos capital*/
+
+				 /*h2*/
+				  document.getElementById("h2-sessao-01").innerHTML = "Las Acciones de Capital";	
+				 /***************************************/ 
+
+				 /*paragrafos 1 - 2 - 3*/
+				  document.getElementById("sessao-01-p").innerHTML = "Acciones de Capital es una Fintech, una empresa de servicios financieros, 100% brasileña y genuinamente nordestina, especializada en la Gestión y Conciliación de Tarjetas Electrónicas. Operamos en varios segmentos de la economía que tienen una gran participación de sus cuentas financieras por cobrar a través de transacciones con tarjetas electrónicas de varios adquirentes y marcas de tarjetas.";
+
+				  document.getElementById("sessao-02-p").innerHTML = "Con amplia experiencia, un equipo calificado y tecnología, somos una empresa partner de SAP, ofreciendo a nuestros clientes una experiencia única al identificar y resolver de manera eficiente problemas como pérdidas y fraudes.";
+
+				  document.getElementById("sessao-03-p").innerHTML = "Nuestra relación con nuestros clientes es de sociedad basada en una relación sana y duradera.";
+				/************************************************/ 
+
+
+			/*txt main*/
+				/*h2 da main*/
+					document.getElementById("h2-center").innerHTML = "Nuestras soluciones";
+				/*cada trecho do flex-box */
+					/*botões*/
+						document.getElementById("btn-ver-main-01").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-02").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-03").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-04").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-05").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-06").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-07").innerHTML = "Ver más";
+						document.getElementById("btn-ver-main-08").innerHTML = "Ver más";
+					/*******************/
+					/*títulos ocultos*/
+
+					document.getElementById("p-B1Cards").innerHTML 			  = "SAP Addon B1Cards, es la solución Oficial certificada por SAP para la Conciliación de Conciliación para SAP Business One. Integrado a más de 130 jugadores del mercado de Medios de Pago, así como a varios POS, TEF, Sefaz, y muchas otras fuentes de información relevantes, actúa en la conciliación de adquirentes de tarjetas, pasarelas de pago para E-Commerces, Marketplaces, Deliverys, Cuentas Digitales, Cash, Pix, TED, DOC y mucho más.";
+
+					document.getElementById("p-B1Pay").innerHTML 				="SAP Addon B1Pay, es una solución de Pago Electrónico para SAP Business One, actuando como otra alternativa para la automatización de los procesos de Cuentas por Pagar, de forma integrada y automatizada con los principales bancos brasileños.";
+
+					document.getElementById("p-B1Bill").innerHTML				="SAP Addon B1Bill, es una solución para Facturación y Cobro, actuando como una alternativa para la automatización de procesos de Facturación/Facturación a gran escala. Toda la estructura de gestión de renegociaciones y tratamientos de gestión ejecutados en B1Bill que permiten una gestión visual de todo el proceso financiero con SAP Business One.";
+
+					document.getElementById("p-B1TaxxInovoices").innerHTML		="SAP Addon B1TaxInvoices es una solución de gestión y automatización de facturas/facturas para SAP Business One. Actúa en el Ingreso de Documentos, actualización de Inventario y Generación de Cuentas por Cobrar en SAP. Integrado a Sefaz a través de los certificados digitales con acceso vía Recipient Manifest, el B1TaxInvoices realiza el procesamiento automático de Notas, gestión y almacenamiento de información, y generación en SAP";
+
+					document.getElementById("p-B1Expenses").innerHTML			= "SAP Addon B1Expenses, es una solución de gestión de gastos corporativos para SAP Business One. Una alternativa más para la gestión de gastos integrada con los principales bancos brasileños y también americanos.";
+
+					document.getElementById("p-Cards").innerHTML				="SAP Addon Cards/4, es la solución para la Conciliación de Medios de Pago para SAP ECC o S/4 Hana. Integrado a más de 130 players del mercado de Medios de Pago y a SAP ECC o S/4 Hana a través del Middleware de Atos Capital, realiza la conciliación de tarjetas, vales, adquirentes, pasarelas de pago para E-Commerces, Marketplaces, Deliverys, Cuentas Digitales, Efectivo, Pix, TED, DOC y más.";
+
+					document.getElementById("p-CardServices").innerHTML				="Solución de Atos Capital para Conciliación de Medios de Pago para más de 50 ERP del mercado, en especial todas las soluciones TOTVS, todas las soluciones Linx, ERP Mega, entre otras. Integrada con más de 130 jugadores en el mercado de Medios de Pago, opera en la conciliación de tarjetas, vales, adquirentes, pasarelas de pago para E-Commerces, Marketplaces, Delivery, Cuentas Digitales, Efectivo, Pix, TED, DOC y más.";
+
+					document.getElementById("p-TaxServices").innerHTML			="Solución de Atos Capital para Conciliación de Medios de Pago para más de 50 ERP del mercado, en especial todas las soluciones TOTVS, todas las soluciones Linx, ERP Mega, entre otras. Integrada con más de 130 jugadores en el mercado de Medios de Pago, opera en la conciliación de tarjetas, vales, adquirentes, pasarelas de pago para E-Commerces, Marketplaces, Delivery, Cuentas Digitales, Efectivo, Pix, TED, DOC y más.";
+
+					/*******************/	
+
+			/*carrossel section 3*/
+					const h2 = document.getElementsByClassName("h2-carrossel");	
+					h2[0].innerHTML = "Nombre de";
+					h2[1].innerHTML = "Nombre de";
+					h2[2].innerHTML = "Nombre de";
+					h2[3].innerHTML = "Nombre de";
+					h2[4].innerHTML = "Nombre de";
+					h2[5].innerHTML = "Nombre de";
+			/*parceiros*/
+			       document.getElementById("h2-parceiros").innerHTML = "partners";
+
+			       const parc_paragrafos = document.getElementsByClassName("paragrafo-parceiros");
+			       /*Sap*/
+				       parc_paragrafos[0].innerHTML = "Atos Capital - Servicios Financieros, es Partner Oficial de SAP SAP, multinacional alemana que opera en Brasil desde hace 50 años, es la mayor empresa de software de gestión del mundo. Presente en más de 180 países, con más de 440 mil clientes de las empresas más grandes e innovadoras del planeta.";
+
+				       parc_paragrafos[1].innerHTML = "A través de PartnerEdge, Atos Capital conquistó la aprobación como Official Partner, enmarcado como SAP Solution Provider con la solución certificada oficialmente, B1Cards - Reconciliación de Medios de Pago para SAP Business One.";
+
+				        parc_paragrafos[2].innerHTML = "Atos Capital es actualmente líder en este segmento en Brasil, con varios casos de éxito en empresas grandes y expresivas en el escenario nacional.";
+
+			       /*B1Aliance*/
+			       		parc_paragrafos[3].innerHTML = "B1Alliance es la alianza de empresas asociadas oficiales de SAP en Brasil, especialistas en verticales de negocios que tiene como objetivo apoyar el ecosistema SAP Business One.";
+			       		parc_paragrafos[4].innerHTML = "Presente en más de 12 países diferentes entre América Latina, Estados Unidos y Europa.";
+			       		parc_paragrafos[5].innerHTML = "Tiene soluciones para varios verticales que junto con SAP Business One ayudan a empresas de varios segmentos con una solución integrada y fácil de implementar.";
+			       		parc_paragrafos[6].innerHTML = "Atos Capital fue aprobado en el proceso de selección, convirtiéndose en miembro integral de la Alianza que agrupa a las principales empresas del ecosistema.";
+			/*bLOG TA NA MIDIA*/
+			 document.getElementById("h2-sessao-4").innerHTML = "Blog | En los Medios";
+
+			 const carrossel_blog1_title = document.getElementsByClassName("h3-carrossel-2");
+			 carrossel_blog1_title[0].innerHTML = "Atos Capital es patrocinadora de SAP Partner Sales Meeting 2021";
+
+			 carrossel_blog1_title[1].innerHTML = "Atos Capital es patrocinadora de SAP Partner Sales Meeting 20211";
+
+			 carrossel_blog1_title[2].innerHTML = "Atos Capital es patrocinadora de SAP Partner Sales Meeting 2021";
+
+			 const carrossel_blog1_p = document.getElementsByClassName("paragrafo-1-carrossel-2");
+			 carrossel_blog1_p[0].innerHTML = "El mayor evento del Ecosistema SAP Business One en Brasil, llega a São Paulo en un nuevo formato, cumpliendo con todas las normas sanitarias estipuladas por el Ministerio de Salud y en un modelo híbrido (presencial y online), brindando lo más innovador, diversión y soluciones tecnológicas para los partners de SAP Business One Brasil.";
+
+			 carrossel_blog1_p[1].innerHTML = "El mayor evento del Ecosistema SAP Business One en Brasil, llega a São Paulo en un nuevo formato, cumpliendo con todas las normas sanitarias estipuladas por el Ministerio de Salud y en un modelo híbrido (presencial y online), brindando lo más innovador, diversión y soluciones tecnológicas para los partners de SAP Business One Brasil.";
+
+			 carrossel_blog1_p[2].innerHTML = "El mayor evento del Ecosistema SAP Business One en Brasil, llega a São Paulo en un nuevo formato, cumpliendo con todas las normas sanitarias estipuladas por el Ministerio de Salud y en un modelo híbrido (presencial y online), brindando lo más innovador, diversión y soluciones tecnológicas para los partners de SAP Business One Brasil.";
+
+			 const carrossel_blog1_btn = document.getElementsByClassName("btn-1-carrossel-2");
+			 carrossel_blog1_btn[0].innerHTML = "Leer el artículo completo";
+			 carrossel_blog1_btn[1].innerHTML = "Leer el artículo completo";
+			 carrossel_blog1_btn[2].innerHTML = "Leer el artículo completo";
+
+			 const carrossel_blog1_btn2 = document.getElementsByClassName("btn-2-carrossel-2");
+			 carrossel_blog1_btn2[0].innerHTML = "Artículo completo >";
+			 carrossel_blog1_btn2[1].innerHTML = "Artículo completo >";
+			 carrossel_blog1_btn2[2].innerHTML = "Artículo completo >";
+			 carrossel_blog1_btn2[3].innerHTML = "Artículo completo >";
+			 carrossel_blog1_btn2[4].innerHTML = "Artículo completo >";
+			 carrossel_blog1_btn2[5].innerHTML = "Artículo completo >";
+
+
+			 const carrossel_blog2_h4 = document.getElementsByClassName("h4-carrossel-2");
+
+			 carrossel_blog2_h4[0].innerHTML = "Granado Pharmácias adopta B1 Capital Suite";
+			 carrossel_blog2_h4[1].innerHTML = "BBlend innova en gestión con B1Cards Suite";
+
+			 carrossel_blog2_h4[2].innerHTML = "Granado Pharmácias adopta B1 Capital Suite";
+			 carrossel_blog2_h4[3].innerHTML = "BBlend innova en gestión con B1Cards Suite";
+
+			 carrossel_blog2_h4[4].innerHTML = "Granado Pharmácias adopta B1 Capital Suite";
+			 carrossel_blog2_h4[5].innerHTML = "BBlend innova en gestión con B1Cards Suite";
+
+			 const carrossel_blog2_p2 = document.getElementsByClassName("paragrafo-2-carrossel-2");
+
+			 carrossel_blog2_p2[0].innerHTML = "Con una trayectoria de más de 150 años en el mercado, Granado Pharmácias, una de las principales empresas de cosméticos de Brasil, con industria, más de 80 tiendas en todo ...";
+			 carrossel_blog2_p2[1].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+			 carrossel_blog2_p2[2].innerHTML = "Con una trayectoria de más de 150 años en el mercado, Granado Pharmácias, una de las principales empresas de cosméticos de Brasil, con industria, más de 80 tiendas en todo ....";
+			 carrossel_blog2_p2[3].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+			 carrossel_blog2_p2[4].innerHTML = "Con una trayectoria de más de 150 años en el mercado, Granado Pharmácias, una de las principales empresas de cosméticos de Brasil, con industria, más de 80 tiendas en todo ...";
+			 carrossel_blog2_p2[5].innerHTML = "BBlend, an Ambev/ Whirlpool, supplier of machines and ready-to-drink beverages, has been solidly expanding its operations in Brazil	expanding its sales both in e-commerce as well as with its..."; 
+
+			/*section final*/ 
+				document.getElementById("h2-sessao-final").innerHTML = "Talk to us"; 
+				document.getElementById("name").innerHTML = "Nombre";
+				document.getElementById("mail").innerHTML = "E-Mail";
+				document.getElementById("message").innerHTML = "Nombre";
+				document.dados.enviar.value = "enviar mensaje";
+
+			/*footer pt1*/
+			
+			 const footer_p = document.getElementsByClassName("texto-footer");
+			 footer_p[0].innerHTML = "Unidad São Paulo: <br>Avenida Paulista, 575 - Edificio Golden Baron<br>Blanco, 19º a pie - Linda vista<br>São Paulo - SP<br>(11) 3522-7018";
+			 footer_p[1].innerHTML = "Base de Operaciones - Noreste: <br> Calle Dr° Roberto Ribeiro,78 - Grageru<br>Aracaju – SE<br>(79)3042-4048";
+			/*footer pt2*/
+			 const politicas = document.getElementsByClassName("politicas_link");
+			 politicas[0].innerHTML = "Política de privacidad";
+			 politicas[1].innerHTML = "Política de privacidad";
+
+		}	
 	</script>
 </html>
